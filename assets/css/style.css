@@ -29,10 +29,38 @@ body {
 
 .game-area {
     display: grid;
-    grid-template-columns: repeat(6, 8rem);
-    grid-template-rows: repeat(3, 8rem);
+    grid-template-columns: repeat(4, 8rem);
+    grid-template-rows: repeat(4, 8rem);
     justify-content: center;
     perspective: 700px;
+  }
+
+  .card {
+    margin: 2px;
+    position: relative;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition-duration: 1.5s;
+    border: 1px solid #002169;
+    border-radius: 10px;
+  }
+  
+  .card-front,
+  .card-back {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .card-back {
+    backface-visibility: hidden;
+    pointer-events: none;
+  }
+  
+  .toggle {
+    transform: rotateY(180deg);
   }
 
 /* --------- Scores */
