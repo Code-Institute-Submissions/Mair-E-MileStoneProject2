@@ -34,48 +34,40 @@ let pairCards = () => [{
         img: "assets/images/uk.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "bigben",
+        img: "assets/images/bigben.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "tajmahal",
+        img: "assets/images/tajmahal.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "pisa",
+        img: "assets/images/pisa.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "eiffeltower",
+        img: "assets/images/eiffeltower.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "statue",
+        img: "assets/images/statue.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "operahouse",
+        img: "assets/images/operahouse.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "pyramid",
+        img: "assets/images/pyramid.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "wall",
+        img: "assets/images/wall.png"
     },
-    {
-        name: "xx",
-        img: "assets/images/xx.png"
-    },
-    {
-        name: "xx",
-        img: "assets/images/xx.png"
-    }, 
 ];
 
-/** RANDOMIZES CARDS ON BOARD */
+/** RANDOMIZES CARDS */
 let randomize = () => {
     let cardInfo = pairCards();
     //randomize the array from pairCards variable: //
@@ -84,3 +76,35 @@ let randomize = () => {
 };
 
 randomize();
+
+/** CREATE GAME-AREA BOARD */
+let gamearea = () => {
+    let cardInfo = randomize();
+
+    cardInfo.forEach((item) => {
+        // Generate HTML card sides and their id names //
+        let card = document.createElement("div");
+        let cardFront = document.createElement("img");
+        let cardBack = document.createElement("img");
+        cardBack.setAttribute('src', 'assets/images/world.JPG');
+
+        card.classList = "card";
+        cardFront.classList = "card-front";
+        cardBack.classList = "card-back";
+        cardFront.setAttribute("alt", "country-landmark");
+        cardBack.setAttribute("alt", "heart-globe");
+
+        // Put images onto card faces //
+        cardFront.src = item.img;
+        card.setAttribute("name", item.name);
+
+        // Put cards in div with id='board' //
+        board.appendChild(card);
+        card.appendChild(cardFront);
+        card.appendChild(cardBack);
+        card.addEventListener('click', (event) => {
+            card.classList.toggle("toggle");
+            checkMatch(event);
+        });
+    });
+};
