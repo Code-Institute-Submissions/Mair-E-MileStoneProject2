@@ -1,11 +1,18 @@
 /* --------- Global style */
 
 body {
-    background-color: #df9c0b;
+    background-color: white;
     font-family: "Raleway", sans-serif;
     color: #5004ac;
     text-align: center;
 }
+
+#container {
+    background-color: rgb(185, 208, 231, .5);
+    border-radius: 10px;
+    border: 4px solid #002169;
+    width: 75%;
+    margin: 6rem auto;
 
 /* --------- Heading */
 .heading {
@@ -16,10 +23,49 @@ body {
 .logo {
     height: 200px;
     padding-right: 5px;
+}
 
 /* --------- Game layout */
 
+.game-area {
+    display: grid;
+    grid-template-columns: repeat(6, 8rem);
+    grid-template-rows: repeat(3, 8rem);
+    justify-content: center;
+    perspective: 700px;
+  }
+
+/* --------- Scores */
+
 /* --------- Buttons */
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.reset:hover,
+.rules:hover,
+.play-button:hover {
+  cursor: pointer;
+}
+
+.reset,
+.rules,
+.play-button {
+    height: 4rem;
+    width: 8rem;
+    border: 4px solid #1f5ae2;
+    border-radius: 10px;
+    background: #23c02d;
+    color: white;
+    font-size: 22px;
+    margin: 0 1rem;
+    letter-spacing: 2px;
+    font-family: 'Righteous', sans-serif;
+    font-weight: bolder;
+}
 
 /* --------- Media queries */
 
