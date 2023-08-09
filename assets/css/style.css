@@ -1,4 +1,4 @@
-/* --------- Global style */
+/* --------- Global style Update colour to image*/
 
 body {
     background-color: white;
@@ -37,6 +37,13 @@ body {
 
 /* --------- Scores */
 
+.score {
+    color: #773b84;
+    letter-spacing: 1px;
+    font-size: 120%;
+    margin-bottom: 0.5rem;
+  }
+
 /* --------- Buttons */
 
 .buttons {
@@ -70,3 +77,14 @@ body {
 /* --------- Media queries */
 
 /* --------- Footer */
+
+.footer {
+    font-size: 75%;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.footer>a:hover {
+    font-size: 150%;
+    color: rgb(0, 0, 0);
+  }
