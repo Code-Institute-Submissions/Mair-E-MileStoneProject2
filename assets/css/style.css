@@ -1,3 +1,26 @@
+/* --------- Global style */
+
 body {
     background-color: #df9c0b;
+    font-family: "Raleway", sans-serif;
+    color: #5004ac;
+    text-align: center;
 }
+
+/* --------- Heading */
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.logo {
+    height: 200px;
+    padding-right: 5px;
+
+/* --------- Game layout */
+
+/* --------- Buttons */
+
+/* --------- Media queries */
+
+/* --------- Footer */
