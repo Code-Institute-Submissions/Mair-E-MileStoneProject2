@@ -2,36 +2,36 @@ const board = document.getElementById("board");
 
 /** ARRAY FOR GAME-AREA LAYOUT */
 let pairCards = () => [{
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "australia",
+        img: "assets/images/oz.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "china",
+        img: "assets/images/china.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "egypt",
+        img: "assets/images/egypt.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "france",
+        img: "assets/images/france.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "india",
+        img: "assets/images/india.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "italy",
+        img: "assets/images/italy.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "usa",
+        img: "assets/images/usa.png"
     },
     {
-        name: "xx",
-        img: "assets/images/xx.png"
+        name: "uk",
+        img: "assets/images/uk.png"
     },
     {
         name: "xx",
