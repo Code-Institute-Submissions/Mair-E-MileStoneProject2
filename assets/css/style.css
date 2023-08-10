@@ -1,7 +1,8 @@
 /* --------- Global style Update colour to image*/
 
 body {
-    background-color: white;
+    background: url('../images/map.jpg') no-repeat center center / cover;
+    height: 100vh;
     font-family: "Raleway", sans-serif;
     color: #5004ac;
     text-align: center;
@@ -87,4 +88,4 @@ body {
 .footer>a:hover {
     font-size: 150%;
     color: rgb(0, 0, 0);
-  }
+}
