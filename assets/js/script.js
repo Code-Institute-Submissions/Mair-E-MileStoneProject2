@@ -75,7 +75,7 @@ var CardsWon = []
 
 /** Randomise card array */
 
-cardArray.sort(( => 0.5 - Math.random))
+cardArray.sort((=> 0.5 - Math.random))
 
 /** CREATE BOARD */
 function createBoard() {
@@ -96,7 +96,7 @@ function checkForMatch() {
     var cards = document.querySelectorAll('img')
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
-    if (cardsChosen[0]) === cardsChosen[1]) {
+    if ((cardsChosen[0]) === cardsChosen[1]) {
         alert('You found a match')
         cards[optionOneId].setAttribute('src', 'images/white.JPG')
         cards[optionTwoId].setAttribute('src', 'images/white.JPG')
@@ -111,7 +111,7 @@ function checkForMatch() {
     resultDisplay.textContent = CardsWon.length
     if (CardsWon.lengh === cardArray.length/2) {
         resultDisplay.textContent = 'Congratulations! You foud all the matches!'
-    } 
+    };
 }
 
 
@@ -133,5 +133,4 @@ function flipCard() {
 /** COUNT NUMBER OF MOVES AND TOTAL SCORE*/
 
 /** HOW TO PLAY, pop-up OPEN instructions */
-
 })
