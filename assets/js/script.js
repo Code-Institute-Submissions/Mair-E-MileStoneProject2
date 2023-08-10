@@ -3,19 +3,19 @@ document.addEventListener('DOMContentLoaded', () => {
 /** ARRAY FOR CARD OPTIONS  */
 const cardArray = [{
         name: "australia",
-        img: "assets/images/oz.png"
+        img: "../images/oz.png"
     },
     {
         name: "china",
-        img: "assets/images/china.png"
+        img: "../images/china.png"
     },
     {
         name: "egypt",
-        img: "assets/images/egypt.png"
+        img: "../images/egypt.png"
     },
     {
         name: "france",
-        img: "assets/images/france.png"
+        img: "../images/france.png"
     },
     {
         name: "india",
@@ -23,47 +23,47 @@ const cardArray = [{
     },
     {
         name: "italy",
-        img: "assets/images/italy.png"
+        img: "../images/italy.png"
     },
     {
         name: "usa",
-        img: "assets/images/usa.png"
+        img: "../images/usa.png"
     },
     {
         name: "uk",
-        img: "assets/images/uk.png"
+        img: "../images/uk.png"
     },
     {
         name: "uk",
-        img: "assets/images/bigben.png"
+        img: "../images/bigben.png"
     },
     {
         name: "india",
-        img: "assets/images/tajmahal.png"
+        img: "../images/tajmahal.png"
     },
     {
         name: "italy",
-        img: "assets/images/pisa.png"
+        img: "../images/pisa.png"
     },
     {
         name: "france",
-        img: "assets/images/eiffeltower.png"
+        img: "../images/eiffeltower.png"
     },
     {
         name: "usa",
-        img: "assets/images/statue.png"
+        img: "../images/statue.png"
     },
     {
         name: "australia",
-        img: "assets/images/operahouse.png"
+        img: "../images/operahouse.png"
     },
     {
         name: "egypt",
-        img: "assets/images/pyramid.png"
+        img: "../images/pyramid.png"
     },
     {
         name: "china",
-        img: "assets/images/wall.png"
+        img: "../images/wall.png"
     },
 ];
 
@@ -75,7 +75,7 @@ var CardsWon = []
 
 /** Randomise card array */
 
-cardArray.sort((=> 0.5 - Math.random))
+cardArray.sort(() => 0.5 - Math.random())
 
 /** CREATE BOARD */
 function createBoard() {
