@@ -1,7 +1,7 @@
-const board = document.getElementById("board");
+document.addEventListener('DOMContentLoaded', () => {
 
-/** ARRAY FOR GAME-AREA LAYOUT */
-let pairCards = () => [{
+/** ARRAY FOR CARD OPTIONS  */
+const cardArray = [{
         name: "australia",
         img: "assets/images/oz.png"
     },
@@ -34,77 +34,104 @@ let pairCards = () => [{
         img: "assets/images/uk.png"
     },
     {
-        name: "bigben",
+        name: "uk",
         img: "assets/images/bigben.png"
     },
     {
-        name: "tajmahal",
+        name: "india",
         img: "assets/images/tajmahal.png"
     },
     {
-        name: "pisa",
+        name: "italy",
         img: "assets/images/pisa.png"
     },
     {
-        name: "eiffeltower",
+        name: "france",
         img: "assets/images/eiffeltower.png"
     },
     {
-        name: "statue",
+        name: "usa",
         img: "assets/images/statue.png"
     },
     {
-        name: "operahouse",
+        name: "australia",
         img: "assets/images/operahouse.png"
     },
     {
-        name: "pyramid",
+        name: "egypt",
         img: "assets/images/pyramid.png"
     },
     {
-        name: "wall",
+        name: "china",
         img: "assets/images/wall.png"
     },
 ];
 
-/** RANDOMIZES CARDS */
-let randomize = () => {
-    let cardInfo = pairCards();
-    //randomize the array from pairCards variable: //
-    cardInfo.sort(() => Math.random() - 0.5);
-    return cardInfo;
-};
+const grid = document.querySelector(".grid");
+const resultDisplay = document.querySelector('#result')
+var cardsChosen =[]
+var cardsChosenId =[]
+var CardsWon = []
 
-randomize();
+/** Randomise card array */
 
-/** CREATE GAME-AREA BOARD */
-let gamearea = () => {
-    let cardInfo = randomize();
+cardArray.sort(( => 0.5 - Math.random))
 
-    cardInfo.forEach((item) => {
-        // Generate HTML card sides and their id names //
-        let card = document.createElement("div");
-        let cardFront = document.createElement("img");
-        let cardBack = document.createElement("img");
-        cardBack.setAttribute('src', 'assets/images/world.JPG');
+/** CREATE BOARD */
+function createBoard() {
+    for (let i=0; i < cardArray.length; i++) {
+        var card = document.createElement('img')
+        card.setAttribute('src', 'images/world.JPG')
+        card.setAttribute('data-id', i)
+        card.addEventListener('click, flipcard')
+        grid.appendChild(card)
+    }
+}
 
-        card.classList = "card";
-        cardFront.classList = "card-front";
-        cardBack.classList = "card-back";
-        cardFront.setAttribute("alt", "country-landmark");
-        cardBack.setAttribute("alt", "heart-globe");
+createBoard()
 
-        // Put images onto card faces //
-        cardFront.src = item.img;
-        card.setAttribute("name", item.name);
+/** CHECK MATCH */
 
-        // Put cards in div with id='board' //
-        board.appendChild(card);
-        card.appendChild(cardFront);
-        card.appendChild(cardBack);
-        card.addEventListener('click', (event) => {
-            card.classList.toggle("toggle");
-            checkMatch(event);
-        });
-    });
-};
+function checkForMatch() {
+    var cards = document.querySelectorAll('img')
+    const optionOneId = cardsChosenId[0]
+    const optionTwoId = cardsChosenId[1]
+    if (cardsChosen[0]) === cardsChosen[1]) {
+        alert('You found a match')
+        cards[optionOneId].setAttribute('src', 'images/white.JPG')
+        cards[optionTwoId].setAttribute('src', 'images/white.JPG')
+        cardsWon.push(cardsChosen)
+    } else {
+        cards[optionOneId].setAttribute('src', 'images/world.JPG')
+        cards[optionTwoId].setAttribute('src', 'images/world.JPG')
+        alert('Sorry, try again')
+    }
+    cardsChosen = []
+    cardsChosenId = []
+    resultDisplay.textContent = CardsWon.length
+    if (CardsWon.lengh === cardArray.length/2) {
+        resultDisplay.textContent = 'Congratulations! You foud all the matches!'
+    } 
+}
+
+
+/** FLIP CARD */
+
+function flipCard() {
+    var cardId = this.getAttribure('data-id')
+    cardsChosen.push(cardArray[cardId].name)
+    cardsChosenId.push(cardId)
+    this.setAttribute('src', cardArray[cardId].img)
+    if (cardsChosen.length === 2) {
+        setTimeout(checkForMatch, 500)
+    }
+}
+
+
+/** NEW GAME */
+
+/** COUNT NUMBER OF MOVES AND TOTAL SCORE*/
+
+/** HOW TO PLAY, pop-up OPEN instructions */
+
+})
