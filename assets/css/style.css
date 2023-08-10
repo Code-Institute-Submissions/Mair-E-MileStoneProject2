@@ -76,6 +76,106 @@ body {
 }
 
 /* --------- Media queries */
+@media screen and (min-width: 1440px) {
+   #container {
+      width: 50%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 750px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 6rem);
+      grid-template-rows: repeat(4, 6rem);
+      justify-content: center;
+      perspective: 800px;
+    }
+  
+    h1 {
+      font-size: 150%;
+    }
+  
+    .moves {
+      font-size: 80%;
+    }
+  
+    h2 {
+      font-size: 150%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 580px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 4rem);
+      grid-template-rows: repeat(4, 4rem);
+      justify-content: center;
+      perspective: 800px;
+    }
+  
+    h1 {
+      font-size: 100%;
+    }
+  
+    .moves {
+      font-size: 70%;
+    }
+  
+    .reset,
+    .rules {
+      height: 2rem;
+      width: 5rem;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+  
+    .list-rules {
+      font-family: 'Poppins', sans-serif;
+      border: 0.8em solid rgb(185, 208, 231, .5);
+      background-color: #19718b;
+      border-radius: 20px;
+      margin: 3rem auto;
+      padding: 1rem;
+    }
+    
+    h2 {
+      font-size: 150%;
+      margin: 0 auto;
+    }
+  
+    .ready-button,
+    .play-button {
+      font-size: 12px;
+      margin: 0;
+      letter-spacing: 0px;
+      height: 2rem;
+      width: 6rem;
+    }
+  }
+  
+  @media screen and (max-width: 390px) {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 3rem);
+      grid-template-rows: repeat(4, 3rem);
+      justify-content: center;
+      perspective: 800px;
+    }
+  
+    h1 {
+      font-size: 85%;
+    }
+  
+    .reset,
+    .rules {
+      height: 2rem;
+      width: 4rem;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+  }
 
 /* --------- Footer */
 
