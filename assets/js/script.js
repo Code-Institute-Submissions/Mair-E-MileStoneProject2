@@ -132,5 +132,23 @@ function flipCard() {
 
 /** COUNT NUMBER OF MOVES AND TOTAL SCORE*/
 
-/** HOW TO PLAY, pop-up OPEN instructions */
+/** HOW TO PLAY, pop-up OPEN and CLOSE instructions */
+
+const rulesButton = document.querySelector(".rules");
+let rules = document.getElementsByClassName("rules-card");
+
+rulesButton.addEventListener('click', showRules);
+
+function showRules() {
+    rules[0].style.display = "block";
+}
+
+const playButton = document.querySelector(".play-button");
+rules = document.getElementsByClassName("rules-card");
+
+playButton.addEventListener('click', hideRules);
+
+function hideRules() {
+    rules[0].style.display = "none";
+}
 })
