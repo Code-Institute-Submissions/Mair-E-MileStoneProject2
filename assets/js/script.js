@@ -19,51 +19,51 @@ const cardArray = [{
     },
     {
         name: "india",
-        img: "images/india.JPG"
+        img: "assets/images/india.JPG"
     },
     {
         name: "italy",
-        img: "images/italy.JPG"
+        img: "assets/images/italy.JPG"
     },
     {
         name: "usa",
-        img: "images/usa.JPG"
+        img: "assets/images/usa.JPG"
     },
     {
         name: "uk",
-        img: "images/uk.JPG"
+        img: "assets/images/uk.JPG"
     },
     {
         name: "uk",
-        img: "images/bigben.JPG"
+        img: "assets/images/bigben.JPG"
     },
     {
         name: "india",
-        img: "images/tajmahal.JPG"
+        img: "assets/images/tajmahal.JPG"
     },
     {
         name: "italy",
-        img: "images/pisa.JPG"
+        img: "assets/images/pisa.JPG"
     },
     {
         name: "france",
-        img: "images/eiffeltower.JPG"
+        img: "assets/images/eiffeltower.JPG"
     },
     {
         name: "usa",
-        img: "images/statue.JPG"
+        img: "assets/images/statue.JPG"
     },
     {
         name: "australia",
-        img: "images/operahouse.JPG"
+        img: "assets/images/operahouse.JPG"
     },
     {
         name: "egypt",
-        img: "images/pyramid.JPG"
+        img: "assets/images/pyramid.JPG"
     },
     {
         name: "china",
-        img: "../images/wall.JPG"
+        img: "assets/images/wall.JPG"
     },
 ];
 
