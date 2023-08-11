@@ -83,13 +83,13 @@ function createBoard() {
         let card = document.createElement('img')
         card.setAttribute('src', 'assets/images/world.JPG')
         card.setAttribute('data-id', i)
-        card.addEventListener('click, flipcard')
+        card.addEventListener('click', flipCard)
         grid.appendChild(card)
     }
     console.log(createBoard);
 }
 
-createBoard()
+
 
 /** CHECK MATCH */
 
@@ -119,7 +119,7 @@ function checkForMatch() {
 /** -- FLIP CARD -- */
 
 function flipCard() {
-    let cardId = this.getAttribure('data-id')
+    let cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
     cardsChosenId.push(cardId)
     this.setAttribute('src', cardArray[cardId].img)
@@ -135,8 +135,10 @@ function flipCard() {
 
 /** -- HOW TO PLAY, pop-up OPEN and CLOSE instructions -- */
 
-const rulesButton = document.querySelector(".rules");
+const rulesButton = document.getElementById("rules");
 let rules = document.getElementsByClassName("rules-card");
+
+console.log(rulesButton);
 
 rulesButton.addEventListener('click', showRules);
 
@@ -152,4 +154,6 @@ playButton.addEventListener('click', hideRules);
 function hideRules() {
     rules[0].style.display = "none";
 }
+
+createBoard()
 })
