@@ -3,67 +3,67 @@ document.addEventListener('DOMContentLoaded', () => {
 /** ARRAY FOR CARD OPTIONS  */
 const cardArray = [{
         name: "australia",
-        img: "../images/oz.png"
+        img: "images/oz.JPG"
     },
     {
         name: "china",
-        img: "../images/china.png"
+        img: "images/china.JPG"
     },
     {
         name: "egypt",
-        img: "../images/egypt.png"
+        img: "images/egypt.JPG"
     },
     {
         name: "france",
-        img: "../images/france.png"
+        img: "images/france.JPG"
     },
     {
         name: "india",
-        img: "assets/images/india.png"
+        img: "images/india.JPG"
     },
     {
         name: "italy",
-        img: "../images/italy.png"
+        img: "images/italy.JPG"
     },
     {
         name: "usa",
-        img: "../images/usa.png"
+        img: "images/usa.JPG"
     },
     {
         name: "uk",
-        img: "../images/uk.png"
+        img: "images/uk.JPG"
     },
     {
         name: "uk",
-        img: "../images/bigben.png"
+        img: "images/bigben.JPG"
     },
     {
         name: "india",
-        img: "../images/tajmahal.png"
+        img: "images/tajmahal.JPG"
     },
     {
         name: "italy",
-        img: "../images/pisa.png"
+        img: "images/pisa.JPG"
     },
     {
         name: "france",
-        img: "../images/eiffeltower.png"
+        img: "images/eiffeltower.JPG"
     },
     {
         name: "usa",
-        img: "../images/statue.png"
+        img: "images/statue.JPG"
     },
     {
         name: "australia",
-        img: "../images/operahouse.png"
+        img: "images/operahouse.JPG"
     },
     {
         name: "egypt",
-        img: "../images/pyramid.png"
+        img: "images/pyramid.JPG"
     },
     {
         name: "china",
-        img: "../images/wall.png"
+        img: "../images/wall.JPG"
     },
 ];
 
@@ -110,7 +110,7 @@ function checkForMatch() {
     cardsChosenId = []
     resultDisplay.textContent = CardsWon.length
     if (CardsWon.lengh === cardArray.length/2) {
-        resultDisplay.textContent = 'Congratulations! You foud all the matches!'
+        resultDisplay.textContent = 'Congratulations! You found all the matches!'
     };
 }
 
