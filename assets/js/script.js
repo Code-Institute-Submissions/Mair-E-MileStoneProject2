@@ -3,19 +3,19 @@ document.addEventListener('DOMContentLoaded', () => {
 /** -- ARRAY FOR CARD OPTIONS --  */
 const cardArray = [{
         name: "australia",
-        img: "images/oz.JPG"
+        img: "assets/images/oz.JPG"
     },
     {
         name: "china",
-        img: "images/china.JPG"
+        img: "assets/images/china.JPG"
     },
     {
         name: "egypt",
-        img: "images/egypt.JPG"
+        img: "assets/images/egypt.JPG"
     },
     {
         name: "france",
-        img: "images/france.JPG"
+        img: "assets/images/france.JPG"
     },
     {
         name: "india",
@@ -99,12 +99,12 @@ function checkForMatch() {
     const optionTwoId = cardsChosenId[1]
     if ((cardsChosen[0]) === cardsChosen[1]) {
         alert('You found a match')
-        cards[optionOneId].setAttribute('src', 'images/white.JPG')
-        cards[optionTwoId].setAttribute('src', 'images/white.JPG')
+        cards[optionOneId].setAttribute('src', 'assets/images/white.JPG')
+        cards[optionTwoId].setAttribute('src', 'assets/images/white.JPG')
         cardsWon.push(cardsChosen)
     } else {
-        cards[optionOneId].setAttribute('src', 'images/world.JPG')
-        cards[optionTwoId].setAttribute('src', 'images/world.JPG')
+        cards[optionOneId].setAttribute('src', 'assets/images/world.JPG')
+        cards[optionTwoId].setAttribute('src', 'assets/images/world.JPG')
         alert('Sorry, try again')
     }
     cardsChosen = []
