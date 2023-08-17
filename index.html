@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- FONT AWESOME AND GOOGLE FONTS-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+  <!-- FONT AWESOME AND GOOGLE FONTS-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Pairs of the World</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Pairs of the World</title>
 </head>
+
 <body>
-<!-- TITLE OF GAME -->
+  <!-- TITLE OF GAME -->
   <div id="container">
     <div class="heading">
-        <img class="logo" src="assets/images/Globe.JPG" alt="globe of the earth logo">
-        <h1>Pairs of the World</h1>
+      <img class="logo" src="assets/images/Globe.JPG" alt="globe of the earth logo">
+      <h1>Pairs of the World</h1>
     </div>
 
-<!-- GAME BOARD -->
-    <div class="grid" id="cardMap">
+    <!-- GAME BOARD -->
+    <div class="grid">
     </div>
 
-<!-- NUMBER OF MOVES AND BEST SCORE -->
+    <!-- NUMBER OF MOVES AND BEST SCORE -->
     <div class="score-area">
-      <p class="score">Number of Moves <span id="result">0</span></p>
-      <p class="score">Best Score <span id="best-score">0</span></p>
+      <p class="score-container">Number of Moves <span id="result">0</span></p>
+      <p class="score-top">Best Score <span id="best-score">0</span></p>
     </div>
 
-<!-- HOW TO PLAY AND NEW GAME BUTTONS -->
+    <!-- HOW TO PLAY AND NEW GAME BUTTONS -->
     <div class="buttons">
-        <button class="reset">New Game</button>
-        <button id="rules">How to Play</button>
+      <button class="reset">New Game</button>
+      <button id="rules">How to Play</button>
     </div>
 
-<!-- HOW TO PLAY (OVERLAY AND POP-UP) -->
-      <h2>How to Play</h2>
-      <p>Test your knowledge of countries and their famous landmarks by matching the flag to the correct image.</p>
-      <ol class="list-rules">
-        <li>Begin the game by clicking any card to flip it over.</li>
-        <li>Flip a second card to see if you have a match up. Only two cards can be flipped at a time.</li>
-        <li>If you have a correct match up, the cards will remain face up.</li>
-        <li>Find all 8 pairs to win the game.</li>
-        <li>Play again to beat your score!</li>
-      </ol>
-      <div class="play">
-        <button class="play-button">Let's play!</button>
-      </div>
+    <!-- HOW TO PLAY (OVERLAY AND POP-UP) -->
+    <h2>How to Play</h2>
+    <p>Test your knowledge of countries and their famous landmarks by matching the flag to the correct image.</p>
+    <ol class="list-rules">
+      <li>Begin the game by clicking any card to flip it over.</li>
+      <li>Flip a second card to see if you have a match up. Only two cards can be flipped at a time.</li>
+      <li>If you have a correct match up, the cards will remain face up.</li>
+      <li>Find all 8 pairs to win the game.</li>
+      <li>Play again to beat your score!</li>
+    </ol>
+    <div class="play">
+      <button class="play-button">Let's play!</button>
     </div>
+  </div>
 </body>
 
-    <!-- FOOTER -->
-<footer class="footer">Website created by <a
-      href="https://www.linkedin.com/in/mair-edmunds" target="_blank" rel="noopener"
-      aria-label="Opens Mair Edmunds personal LinkedIn page in a new tab">Mair Edmunds</a> and open-sourced on <a
-      href="xx" target="_blank" rel="noopener"
-      aria-label="Opens the GitHub repository for this project in a new tab">GitHub</a>.
+<!-- FOOTER -->
+<footer class="footer">Website created by <a href="https://www.linkedin.com/in/mair-edmunds" target="_blank"
+    rel="noopener" aria-label="Opens Mair Edmunds personal LinkedIn page in a new tab">Mair Edmunds</a> and open-sourced
+  on <a href="xx" target="_blank" rel="noopener"
+    aria-label="Opens the GitHub repository for this project in a new tab">GitHub</a>.
 </footer>
 
 <script src="assets/js/script.js"></script>
+
 </html>

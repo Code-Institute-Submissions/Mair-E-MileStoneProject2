@@ -1,78 +1,79 @@
 /* --------- Global style */
 
 body {
-    background-image: url(../images/map.jpg);
-    background-color: #002169;
-    font-family: "Raleway", sans-serif;
-    color: #5004ac;
-    text-align: center;
+  background-image: url(../images/map.jpg);
+  background-color: #002169;
+  font-family: "Raleway", sans-serif;
+  color: #5004ac;
+  text-align: center;
 }
 
 #container {
-    background-color: rgb(185, 208, 231, .8);
-    border-radius: 10px;
-    border: 4px solid #002169;
-    width: 75%;
-    margin: 6rem auto;
+  background-color: rgb(185, 208, 231, .8);
+  border-radius: 10px;
+  border: 4px solid #002169;
+  width: 75%;
+  margin: 6rem auto;
 
-/* --------- Heading */
-.heading {
+  /* --------- Heading */
+  .heading {
     text-align: center;
     font-size: 2.5rem;
-}
+  }
 
-.logo {
+  .logo {
     height: 200px;
     padding-right: 5px;
-}
+  }
 
-/* --------- Game-area layout */
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 8rem);
-  grid-template-rows: repeat(4, 8rem);
-  justify-content: center;
-  perspective: 800px;
-  grid-gap: 0.5rem;
-}
+  /* --------- Game-area layout */
 
-.grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 8rem);
+    grid-template-rows: repeat(4, 8rem);
+    justify-content: center;
+    perspective: 800px;
+    grid-gap: 0.5rem;
+  }
 
-.grid img:hover {
-  transform: scale(1.05); 
-}
+  .grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-/* --------- Scores */
+  .grid img:hover {
+    transform: scale(1.05);
+  }
 
-.score {
+  /* --------- Scores */
+
+  .score {
     color: #773b84;
     letter-spacing: 1px;
     font-size: 120%;
     margin-bottom: 0.5rem;
   }
 
-/* --------- Buttons */
+  /* --------- Buttons */
 
-.buttons {
+  .buttons {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-.reset:hover,
-.rules:hover,
-.play-button:hover {
-  cursor: pointer;
-}
+  .reset:hover,
+  .rules:hover,
+  .play-button:hover {
+    cursor: pointer;
+  }
 
-.reset,
-.rules,
-.play-button {
+  .reset,
+  .rules,
+  .play-button {
     height: 4rem;
     width: 8rem;
     border: 4px solid #1f5ae2;
@@ -84,15 +85,16 @@ body {
     letter-spacing: 2px;
     font-family: 'Righteous', sans-serif;
     font-weight: bolder;
-}
+  }
 
-/* --------- How to pop up */
+  /* --------- How to pop up */
 
-.list-rules>li {
+  .list-rules>li {
     margin-bottom: 0.5rem;
-}
+  }
 
-.rules-card {
+  .rules-card {
+    display: none;
     background-color: rgb(5, 20, 52, .8);
     position: fixed;
     z-index: 99;
@@ -101,15 +103,15 @@ body {
     width: 100%;
     height: 100%;
   }
-  
-/* --------- Media queries */
-@media screen and (min-width: 1440px) {
-   #container {
+
+  /* --------- Media queries */
+  @media screen and (min-width: 1440px) {
+    #container {
       width: 50%;
     }
   }
-  
-  
+
+
   @media screen and (max-width: 750px) {
     .grid {
       display: grid;
@@ -118,21 +120,21 @@ body {
       justify-content: center;
       perspective: 800px;
     }
-  
+
     h1 {
       font-size: 150%;
     }
-  
+
     .moves {
       font-size: 80%;
     }
-  
+
     h2 {
       font-size: 150%;
       margin: 0 auto;
     }
   }
-  
+
   @media screen and (max-width: 580px) {
     .grid {
       display: grid;
@@ -141,15 +143,15 @@ body {
       justify-content: center;
       perspective: 800px;
     }
-  
+
     h1 {
       font-size: 100%;
     }
-  
+
     .moves {
       font-size: 70%;
     }
-  
+
     .reset,
     .rules {
       height: 2rem;
@@ -157,7 +159,7 @@ body {
       font-size: 14px;
       letter-spacing: 1px;
     }
-  
+
     .list-rules {
       font-family: 'Poppins', sans-serif;
       border: 0.8em solid rgb(185, 208, 231, .5);
@@ -166,12 +168,12 @@ body {
       margin: 3rem auto;
       padding: 1rem;
     }
-    
+
     h2 {
       font-size: 150%;
       margin: 0 auto;
     }
-  
+
     .ready-button,
     .play-button {
       font-size: 12px;
@@ -181,7 +183,7 @@ body {
       width: 6rem;
     }
   }
-  
+
   @media screen and (max-width: 390px) {
     .grid {
       display: grid;
@@ -190,11 +192,11 @@ body {
       justify-content: center;
       perspective: 800px;
     }
-  
+
     h1 {
       font-size: 85%;
     }
-  
+
     .reset,
     .rules {
       height: 2rem;
@@ -204,15 +206,15 @@ body {
     }
   }
 
-/* --------- Footer */
+  /* --------- Footer */
 
-.footer {
+  .footer {
     font-size: 75%;
     margin-left: 1rem;
     margin-top: 10px;
-}
+  }
 
-.footer>a:hover {
+  .footer>a:hover {
     font-size: 150%;
     color: rgb(0, 0, 0);
-}
+  }
