@@ -94,12 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkForMatch() {
         let cards = document.querySelectorAll('img')
-        let optionOneId = cardsChosenId[0]
-        let optionTwoId = cardsChosenId[1]
+        const optionOneId = cardsChosenId[0]
+        const optionTwoId = cardsChosenId[1]
         if ((cardsChosen[0]) === cardsChosen[1]) {
             alert('You found a match.')
-            cards[optionOneId].setAttribute('src', 'assets/images/white.JPG')
-            cards[optionTwoId].setAttribute('src', 'assets/images/white.JPG')
             cardsWon.push(cardsChosen)
         } else {
             cards[optionOneId].setAttribute('src', 'assets/images/world.JPG')
