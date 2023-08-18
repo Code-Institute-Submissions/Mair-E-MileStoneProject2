@@ -157,7 +157,6 @@ body {
   .reset,
   #rules {
     height: 2rem;
-    width: 5rem;
     font-size: 14px;
     letter-spacing: 1px;
   }
@@ -201,8 +200,7 @@ body {
 
   .reset,
   #rules {
-    height: 2rem;
-    width: 4rem;
+    height: 3rem;
     font-size: 12px;
     letter-spacing: 1px;
   }
