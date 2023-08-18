@@ -14,209 +14,209 @@ body {
   border: 4px solid #002169;
   width: 75%;
   margin: 6rem auto;
+}
 
-  /* --------- Heading */
-  .heading {
-    text-align: center;
-    font-size: 2.5rem;
+/* --------- Heading */
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.logo {
+  height: 15rem;
+  padding-right: 0.5rem;
+}
+
+
+/* --------- Game-area layout */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 8rem);
+  grid-template-rows: repeat(4, 8rem);
+  justify-content: center;
+  perspective: 800px;
+  grid-gap: 0.5rem;
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+/* --------- Scores */
+
+.score {
+  color: #773b84;
+  letter-spacing: 1px;
+  font-size: 120%;
+  margin-bottom: 0.5rem;
+}
+
+/* --------- Buttons */
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset:hover,
+.rules:hover,
+.play-button:hover {
+  cursor: pointer;
+}
+
+.reset,
+.rules,
+.play-button {
+  height: 4rem;
+  width: 8rem;
+  border: 4px solid #1f5ae2;
+  border-radius: 10px;
+  background: #23c02d;
+  color: white;
+  font-size: 22px;
+  margin: 0 1rem;
+  letter-spacing: 2px;
+  font-family: 'Righteous', sans-serif;
+  font-weight: bolder;
+}
+
+/* --------- How to pop up */
+
+.list-rules>li {
+  margin-bottom: 0.5rem;
+}
+
+.rules-card {
+  display: none;
+  background-color: rgb(5, 20, 52, .95);
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: white;
+  font-size: larger;
+}
+
+/* --------- Media queries */
+@media screen and (min-width: 1440px) {
+  #container {
+    width: 50%;
   }
-
-  .logo {
-    height: 250px;
-    padding-right: 5px;
-  }
+}
 
 
-  /* --------- Game-area layout */
-
+@media screen and (max-width: 750px) {
   .grid {
     display: grid;
-    grid-template-columns: repeat(4, 8rem);
-    grid-template-rows: repeat(4, 8rem);
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: repeat(4, 6rem);
     justify-content: center;
     perspective: 800px;
-    grid-gap: 0.5rem;
   }
 
-  .grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  h1 {
+    font-size: 150%;
   }
 
-  .grid img:hover {
-    transform: scale(1.05);
+  .moves {
+    font-size: 80%;
   }
 
-  /* --------- Scores */
-
-  .score {
-    color: #773b84;
-    letter-spacing: 1px;
-    font-size: 120%;
-    margin-bottom: 0.5rem;
+  h2 {
+    font-size: 150%;
+    margin: 0 auto;
   }
+}
 
-  /* --------- Buttons */
-
-  .buttons {
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 580px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: repeat(4, 4rem);
     justify-content: center;
+    perspective: 800px;
   }
 
-  .reset:hover,
-  .rules:hover,
-  .play-button:hover {
-    cursor: pointer;
+  h1 {
+    font-size: 100%;
+  }
+
+  .moves {
+    font-size: 70%;
   }
 
   .reset,
-  .rules,
-  .play-button {
-    height: 4rem;
-    width: 8rem;
-    border: 4px solid #1f5ae2;
-    border-radius: 10px;
-    background: #23c02d;
-    color: white;
-    font-size: 22px;
-    margin: 0 1rem;
-    letter-spacing: 2px;
+  .rules {
+    height: 2rem;
+    width: 5rem;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .list-rules {
     font-family: 'Righteous', sans-serif;
-    font-weight: bolder;
+    border: 0.8em solid rgb(185, 208, 231, .5);
+    background-color: #19718b;
+    border-radius: 20px;
+    margin: 3rem auto;
+    padding: 1rem;
   }
 
-  /* --------- How to pop up */
-
-  .list-rules>li {
-    margin-bottom: 0.5rem;
-  }
-
-  .rules-card {
-    display: none;
-    background-color: rgb(5, 20, 52, .95);
-    position: fixed;
-    z-index: 99;
-    left: 0;
-    top: 0;
-    width: 100%;
-    color: white;
-    font-size: larger;
-  }
-
-  /* --------- Media queries */
-  @media screen and (min-width: 1440px) {
-    #container {
-      width: 50%;
-    }
-  }
-
-
-  @media screen and (max-width: 750px) {
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 6rem);
-      grid-template-rows: repeat(4, 6rem);
-      justify-content: center;
-      perspective: 800px;
-    }
-
-    h1 {
-      font-size: 150%;
-    }
-
-    .moves {
-      font-size: 80%;
-    }
-
-    h2 {
-      font-size: 150%;
-      margin: 0 auto;
-    }
-  }
-
-  @media screen and (max-width: 580px) {
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 4rem);
-      grid-template-rows: repeat(4, 4rem);
-      justify-content: center;
-      perspective: 800px;
-    }
-
-    h1 {
-      font-size: 100%;
-    }
-
-    .moves {
-      font-size: 70%;
-    }
-
-    .reset,
-    .rules {
-      height: 2rem;
-      width: 5rem;
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
-
-    .list-rules {
-      font-family: 'Righteous', sans-serif;
-      border: 0.8em solid rgb(185, 208, 231, .5);
-      background-color: #19718b;
-      border-radius: 20px;
-      margin: 3rem auto;
-      padding: 1rem;
-    }
-
-    h2 {
-      font-size: 150%;
-      margin: 0 auto;
-    }
-
-    .ready-button,
-    .play-button {
-      font-size: 12px;
-      margin: 0;
-      letter-spacing: 0px;
-      height: 2rem;
-      width: 6rem;
-    }
-  }
-
-  @media screen and (max-width: 390px) {
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 3rem);
-      grid-template-rows: repeat(4, 3rem);
-      justify-content: center;
-      perspective: 800px;
-    }
-
-    h1 {
-      font-size: 85%;
-    }
-
-    .reset,
-    .rules {
-      height: 2rem;
-      width: 4rem;
-      font-size: 12px;
-      letter-spacing: 1px;
-    }
-  }
-
-  /* --------- Footer */
-
-  .footer {
-    font-size: 75%;
-    margin-left: 1rem;
-    margin-top: 10px;
-  }
-
-  .footer>a:hover {
+  h2 {
     font-size: 150%;
-    color: rgb(0, 0, 0);
+    margin: 0 auto;
   }
+
+  .ready-button,
+  .play-button {
+    font-size: 12px;
+    margin: 0;
+    letter-spacing: 0px;
+    height: 2rem;
+    width: 6rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: repeat(4, 3rem);
+    justify-content: center;
+    perspective: 800px;
+  }
+
+  h1 {
+    font-size: 85%;
+  }
+
+  .reset,
+  .rules {
+    height: 2rem;
+    width: 4rem;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+/* --------- Footer */
+
+.footer {
+  font-size: 75%;
+  margin-left: 1rem;
+  margin-top: 10px;
+}
+
+.footer>a:hover {
+  font-size: 150%;
+  color: rgb(0, 0, 0);
 }

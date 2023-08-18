@@ -86,10 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
-        console.log(createBoard);
+        console.log("Creating board...");
     }
-
-
 
     /** CHECK MATCH */
 
@@ -116,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(checkForMatch);
     }
 
-
     /** -- FLIP CARD -- */
 
     function flipCard() {
@@ -130,7 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(flipCard);
     }
 
-
     /** -- RESET MOVE COUNTER AND CLEAR THE BOARD -- */
 
     const resetButton = document.querySelector(".reset");
@@ -141,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
         moves = 0;
         grid.innerHTML = '';
         createBoard();
+        console.log("Button clicked!");
     });
 
     /** -- COUNT NUMBER OF MOVES AND TOTAL SCORE -- */
