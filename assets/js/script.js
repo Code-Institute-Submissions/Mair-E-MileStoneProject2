@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 0; i < cardArray.length; i++) {
             let card = document.createElement('img')
             card.setAttribute('src', 'assets/images/world.JPG')
+            card.setAttribute('class', 'images')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -93,7 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
     /** CHECK MATCH AND RESET CARDS IF DO NOT MATCH -- */
 
     function checkForMatch() {
-        let cards = document.querySelectorAll('img')
+        let cards = document.querySelectorAll('.images')
+        console.log(cards);
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
         if ((cardsChosen[0]) === cardsChosen[1]) {

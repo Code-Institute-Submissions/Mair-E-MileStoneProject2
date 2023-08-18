@@ -23,10 +23,10 @@ body {
 }
 
 .logo {
-  height: 250px;
+  height: auto;
+  width: 100%;
   padding-right: 5px;
 }
-
 
 /* --------- Game-area layout */
 
@@ -106,7 +106,7 @@ body {
   font-size: larger;
 }
 
-/* --------- Media queries */
+/* --------- Media queries - This changes xxx */
 @media screen and (min-width: 1440px) {
   #container {
     width: 50%;
