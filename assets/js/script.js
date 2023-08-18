@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Creating board...");
     }
 
-    /** CHECK MATCH */
+    /** CHECK MATCH AND RESET CARDS IF DO NOT MATCH -- */
 
     function checkForMatch() {
         let cards = document.querySelectorAll('img')
@@ -98,6 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if ((cardsChosen[0]) === cardsChosen[1]) {
             alert('You found a match.')
+            cards[optionOneId].setAttribute('src', 'assets/images/white.JPG')
+            cards[optionTwoId].setAttribute('src', 'assets/images/white.JPG')
             cardsWon.push(cardsChosen)
         } else {
             cards[optionOneId].setAttribute('src', 'assets/images/world.JPG')
@@ -105,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Sorry, try again.')
         }
 
-        /** -- RESET CARDS IF DO NOT MATCH -- */
+        /** -- ALL CARDS MATCHED AND GAME COMPLETE -- */
 
         cardsChosen = []
         cardsChosenId = []
