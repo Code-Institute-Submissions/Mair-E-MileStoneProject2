@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultDisplay = document.querySelector('#result')
     let cardsChosen = []
     let cardsChosenId = []
-    let CardsWon = []
+    let cardsWon = []
 
     /** -- RANDOMISE CARD ARRAY -- */
 
@@ -109,8 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         cardsChosen = []
         cardsChosenId = []
-        resultDisplay.textContent = CardsWon.length
-        if (CardsWon.lengh === cardArray.length / 2) {
+        resultDisplay.textContent = cardsWon.length
+        if (cardsWon.length === cardArray.length / 2) {
             resultDisplay.textContent = 'Congratulations! You found all the matches!'
         };
         console.log(checkForMatch);
@@ -134,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /** -- NEW GAME -- */
 
     const resetButton = document.querySelector(".reset");
+    const moveContainer = document.querySelector(".move-count");
 
     resetButton.addEventListener("click", () => {
         moveContainer.innerHTML = 0;
@@ -157,8 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showRules() {
         rules[0].style.display = "block";
-        console.log(showRules);
     }
+    console.log(showRules);
 
     const playButton = document.querySelector(".play-button");
     rules = document.getElementsByClassName("rules-card");
@@ -167,8 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function hideRules() {
         rules[0].style.display = "none";
-        console.log(hideRules);
     }
+    console.log(hideRules);
 
     createBoard()
 })
