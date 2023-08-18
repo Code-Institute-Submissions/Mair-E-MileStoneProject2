@@ -35,74 +35,123 @@ To log into the Heroku toolbelt CLI:
 You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 ------
+<div align="center">
+  <img src="xxx" style="background-color: black" alt="Globe of the world cartoon">
+</div> (Header)
+<div align="center">
+  <img src="xxx" alt="Memory Game Page">
+</div> (Image of site on all platforms)
 
-## Release History
+[Pairs of the World](link xx) is designed as an online interactive game with matching pairs as its main feature. Its goal is to stimulate and entertain the user as well as educate the user on where geographical landmarks can be found around the world. I wanted to create a game that was more intriguing, with a level of difficulty rather than just matching identical pairs. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Table of Contents
+1. <details open>
+    <summary><a href="#ux">UX</a></summary>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    <ul>
+    <li><details>
+    <summary><a href="#goals">Goals</a></summary>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    - [Visitor Goals](#visitor-goals)
+    - [Business Goals](#business-goals)
+    - [User Stories](#user-stories)
+    </details></li>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    <li><details>
+    <summary><a href="#visual-design">Visual Design</a></summary>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    - [Wireframes](#wireframes)
+    - [Fonts](#fonts)
+    - [Icons](#icons)
+    - [Colors](#colors)
+    - [Images](#images)
+    - [Styling](#styling)
+    </details></li>
+    </ul>
+</details>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+2. <details open>
+    <summary><a href="#features">Features</a></summary>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    <ul>
+    <li><details>
+    <summary><a href="#page-elements">Page Elements</a></summary>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    - [Main Page](#main-pages)
+    - [Pop Up](#pop-up)
+    </details></li>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    <li><details>
+    <summary><a href="#additional-features">Additional Features</a></summary>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    - xx
+    </details></li>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    <li><details>
+    <summary><a href="#feature-ideas">Feature Ideas</a></summary>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+    - [Basic](#basic)
+    - [Content](#content)
+    </details></li>
+    </ul>
+</details>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+3. <details open>
+    <summary><a href="#technologies-used">Technologies Used</a></summary>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    - [Languages](#languages)
+    - [Frameworks](#frameworks)
+    - [Libraries](#libraries)
+    - [Platforms](#platforms)
+    - [Other Tools](#other-tools)
+</details>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+4. <details open>
+    <summary><a href="#testing">Testing</a></summary>
 
-------
+    <ul>
+    <li><details>
+    <summary><a href="#methods">Methods</a></summary>
 
-## FAQ about the uptime script
+    - [Validation](#validation)
+    - [General Testing](#general-testing)
+    - [Mobile Testing](#mobile-testing)
+    - [Desktop Testing](#desktop-testing)
+    </details></li>
 
-**Why have you added this script?**
+    <li><details>
+    <summary><a href="#bugs">Bugs</a></summary>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    - [Known Bugs](#known-bugs)
+    - [Fixed Bugs](#fixed-bugs)
+    </details></li>
+    </ul>
+</details>
 
-**How will this affect me?**
+5. <details open>
+    <summary><a href="#deployment">Deployment</a></summary>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+    <ul>
+    <li><details>
+    <summary><a href="#local-deployment">Local Deployment</a></summary>
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    - [Local Preparation](#local-preparation)
+    - [Local Instructions](#local-instructions)
+    </details></li>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+    <li><details>
+    <summary><a href="#github-deployment">Github Deployment</a></summary>
 
-**So….?**
+    - [Github Preparation](#github-preparation)
+    - [Github Instructions](#github-instructions)
+    </details></li>
+    </ul>
+</details>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+6. <details open>
+    <summary><a href="#credit-and-contact">Credit and Contact</a></summary>
 
-**Can I opt out?**
+    - [Content](#content)
+    - [Contact](#contact)
+</details>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
