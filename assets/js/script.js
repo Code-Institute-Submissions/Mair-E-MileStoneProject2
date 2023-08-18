@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    /** -- NEW GAME -- */
+    /** -- RESET MOVE COUNTER AND CLEAR THE BOARD -- */
 
     const resetButton = document.querySelector(".reset");
     const moveContainer = document.querySelector(".move-count");
@@ -139,15 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
     resetButton.addEventListener("click", () => {
         moveContainer.innerHTML = 0;
         moves = 0;
-        board.innerHTML = '';
+        grid.innerHTML = '';
         createBoard();
     });
 
-
-
     /** -- COUNT NUMBER OF MOVES AND TOTAL SCORE -- */
 
-    /** -- HOW TO PLAY, pop-up OPEN and CLOSE instructions -- */
+    /** -- OPEN HOW TO PLAY, pop-up instructions -- */
 
     const rulesButton = document.getElementById("rules");
     let rules = document.getElementsByClassName("rules-card");
@@ -160,6 +158,8 @@ document.addEventListener('DOMContentLoaded', () => {
         rules[0].style.display = "block";
     }
     console.log(showRules);
+
+    /** -- CLOSE HOW TO PLAY, pop-up instructions -- */
 
     const playButton = document.querySelector(".play-button");
     rules = document.getElementsByClassName("rules-card");
