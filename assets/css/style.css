@@ -76,7 +76,6 @@ body {
 #rules,
 .play-button {
   height: 4rem;
-  width: 8rem;
   border: 4px solid #1f5ae2;
   border-radius: 10px;
   background: #23c02d;
@@ -156,7 +155,6 @@ body {
 
   .reset,
   #rules {
-    height: 2rem;
     font-size: 14px;
     letter-spacing: 1px;
   }
@@ -200,7 +198,6 @@ body {
 
   .reset,
   #rules {
-    height: 3rem;
     font-size: 12px;
     letter-spacing: 1px;
   }
