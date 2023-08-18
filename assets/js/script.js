@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cardArray.sort(() => 0.5 - Math.random())
 
     /** -- CREATE BOARD -- */
+
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             let card = document.createElement('img')
@@ -93,8 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkForMatch() {
         let cards = document.querySelectorAll('img')
-        const optionOneId = cardsChosenId[0]
-        const optionTwoId = cardsChosenId[1]
+        let optionOneId = cardsChosenId[0]
+        let optionTwoId = cardsChosenId[1]
         if ((cardsChosen[0]) === cardsChosen[1]) {
             alert('You found a match.')
             cards[optionOneId].setAttribute('src', 'assets/images/white.JPG')
@@ -105,9 +106,13 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionTwoId].setAttribute('src', 'assets/images/world.JPG')
             alert('Sorry, try again.')
         }
+
+        /** -- RESET CARDS IF DO NOT MATCH -- */
+
         cardsChosen = []
         cardsChosenId = []
         resultDisplay.textContent = cardsWon.length
+
         if (cardsWon.length === cardArray.length / 2) {
             resultDisplay.textContent = 'Congratulations! You found all the matches!'
         };
@@ -127,10 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(flipCard);
     }
 
-    /** -- RESET MOVE COUNTER AND CLEAR THE BOARD -- */
+    /** -- RESET MATCHES COUNTER AND CLEAR THE BOARD -- */
 
     const resetButton = document.querySelector(".reset");
-    const moveContainer = document.querySelector(".move-count");
+    const moveContainer = document.querySelector('.move-count');
+    let moveCount = 0;
 
     resetButton.addEventListener("click", () => {
         moveContainer.innerHTML = 0;
@@ -139,8 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
         createBoard();
         console.log("Button clicked!");
     });
-
-    /** -- COUNT NUMBER OF MOVES AND TOTAL SCORE -- */
 
     /** -- OPEN HOW TO PLAY, pop-up instructions -- */
 
@@ -169,4 +173,5 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(hideRules);
 
     createBoard()
+
 })

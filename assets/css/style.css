@@ -23,8 +23,8 @@ body {
 }
 
 .logo {
-  height: 15rem;
-  padding-right: 0.5rem;
+  height: 250px;
+  padding-right: 5px;
 }
 
 
@@ -73,7 +73,7 @@ body {
 }
 
 .reset,
-.rules,
+#rules,
 .play-button {
   height: 4rem;
   width: 8rem;
