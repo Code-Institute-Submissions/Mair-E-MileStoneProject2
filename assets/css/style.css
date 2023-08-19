@@ -204,13 +204,14 @@ body {
 
 /* --------- Footer */
 
-.footer {
+footer {
   font-size: 75%;
   margin-left: 1rem;
   margin-top: 10px;
+  font-weight: bold;
 }
 
-.footer>a:hover {
+footer>a:hover {
   font-size: 150%;
   color: rgb(0, 0, 0);
 }
