@@ -3,67 +3,67 @@ document.addEventListener('DOMContentLoaded', () => {
     /** -- ARRAY FOR CARD OPTIONS --  */
     const cardArray = [{
             name: "australia",
-            img: "assets/images/oz.JPG"
+            img: "assets/images/oz.jpg"
         },
         {
             name: "china",
-            img: "assets/images/china.JPG"
+            img: "assets/images/china.jpg"
         },
         {
             name: "egypt",
-            img: "assets/images/egypt.JPG"
+            img: "assets/images/egypt.jpg"
         },
         {
             name: "france",
-            img: "assets/images/france.JPG"
+            img: "assets/images/france.jpg"
         },
         {
             name: "india",
-            img: "assets/images/india.JPG"
+            img: "assets/images/india.jpg"
         },
         {
             name: "italy",
-            img: "assets/images/italy.JPG"
+            img: "assets/images/italy.jpg"
         },
         {
             name: "usa",
-            img: "assets/images/usa.JPG"
+            img: "assets/images/usa.jpg"
         },
         {
             name: "uk",
-            img: "assets/images/uk.JPG"
+            img: "assets/images/uk.jpg"
         },
         {
             name: "uk",
-            img: "assets/images/bigben.JPG"
+            img: "assets/images/bigben.jpg"
         },
         {
             name: "india",
-            img: "assets/images/tajmahal.JPG"
+            img: "assets/images/tajmahal.jpg"
         },
         {
             name: "italy",
-            img: "assets/images/pisa.JPG"
+            img: "assets/images/pisa.jpg"
         },
         {
             name: "france",
-            img: "assets/images/eiffeltower.JPG"
+            img: "assets/images/eiffeltower.jpg"
         },
         {
             name: "usa",
-            img: "assets/images/statue.JPG"
+            img: "assets/images/statue.jpg"
         },
         {
             name: "australia",
-            img: "assets/images/operahouse.JPG"
+            img: "assets/images/operahouse.jpg"
         },
         {
             name: "egypt",
-            img: "assets/images/pyramid.JPG"
+            img: "assets/images/pyramid.jpg"
         },
         {
             name: "china",
-            img: "assets/images/wall.JPG"
+            img: "assets/images/wall.jpg"
         },
     ];
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             let card = document.createElement('img')
-            card.setAttribute('src', 'assets/images/world.JPG')
+            card.setAttribute('src', 'assets/images/world.jpg')
             card.setAttribute('class', 'images')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
@@ -100,12 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if ((cardsChosen[0]) === cardsChosen[1]) {
             alert('You found a match.')
-            cards[optionOneId].setAttribute('src', 'assets/images/white.JPG')
-            cards[optionTwoId].setAttribute('src', 'assets/images/white.JPG')
+            cards[optionOneId].setAttribute('src', 'assets/images/white.jpg')
+            cards[optionTwoId].setAttribute('src', 'assets/images/white.jpg')
             cardsWon.push(cardsChosen)
         } else {
-            cards[optionOneId].setAttribute('src', 'assets/images/world.JPG')
-            cards[optionTwoId].setAttribute('src', 'assets/images/world.JPG')
+            cards[optionOneId].setAttribute('src', 'assets/images/world.jpg')
+            cards[optionTwoId].setAttribute('src', 'assets/images/world.jpg')
             alert('Sorry, try again.')
         }
 
