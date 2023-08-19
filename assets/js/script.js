@@ -68,25 +68,25 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const grid = document.querySelector(".grid");
-    const resultDisplay = document.querySelector('#result')
-    let cardsChosen = []
-    let cardsChosenId = []
-    let cardsWon = []
+    const resultDisplay = document.querySelector('#result');
+    let cardsChosen = [];
+    let cardsChosenId = [];
+    let cardsWon = [];
 
     /** -- RANDOMISE CARD ARRAY -- */
 
-    cardArray.sort(() => 0.5 - Math.random())
+    cardArray.sort(() => 0.5 - Math.random());
 
     /** -- CREATE BOARD -- */
 
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
-            let card = document.createElement('img')
-            card.setAttribute('src', 'assets/images/world.jpg')
-            card.setAttribute('class', 'images')
-            card.setAttribute('data-id', i)
-            card.addEventListener('click', flipCard)
-            grid.appendChild(card)
+            let card = document.createElement('img');
+            card.setAttribute('src', 'assets/images/world.jpg');
+            card.setAttribute('class', 'images');
+            card.setAttribute('data-id', i);
+            card.addEventListener('click', flipCard);
+            grid.appendChild(card);
         }
         console.log("Creating board...");
     }
@@ -94,43 +94,43 @@ document.addEventListener('DOMContentLoaded', () => {
     /** CHECK MATCH AND RESET CARDS IF DO NOT MATCH -- */
 
     function checkForMatch() {
-        let cards = document.querySelectorAll('.images')
+        let cards = document.querySelectorAll('.images');
         console.log(cards);
         const optionOneId = cardsChosenId[0]
-        const optionTwoId = cardsChosenId[1]
+        const optionTwoId = cardsChosenId[1];
         if ((cardsChosen[0]) === cardsChosen[1]) {
-            alert('You found a match.')
-            cards[optionOneId].setAttribute('src', 'assets/images/white.jpg')
-            cards[optionTwoId].setAttribute('src', 'assets/images/white.jpg')
-            cardsWon.push(cardsChosen)
+            alert('You found a match.');
+            cards[optionOneId].setAttribute('src', 'assets/images/white.jpg');
+            cards[optionTwoId].setAttribute('src', 'assets/images/white.jpg');
+            cardsWon.push(cardsChosen);
         } else {
-            cards[optionOneId].setAttribute('src', 'assets/images/world.jpg')
-            cards[optionTwoId].setAttribute('src', 'assets/images/world.jpg')
-            alert('Sorry, try again.')
+            cards[optionOneId].setAttribute('src', 'assets/images/world.jpg');
+            cards[optionTwoId].setAttribute('src', 'assets/images/world.jpg');
+            alert('Sorry, try again.');
         }
 
         /** -- ALL CARDS MATCHED AND GAME COMPLETE -- */
 
-        cardsChosen = []
-        cardsChosenId = []
-        resultDisplay.textContent = cardsWon.length
+        cardsChosen = [];
+        cardsChosenId = [];
+        resultDisplay.textContent = cardsWon.length;
 
         if (cardsWon.length === cardArray.length / 2) {
-            resultDisplay.textContent = 'Congratulations! You found all the matches!'
-        };
+            resultDisplay.textContent = 'Congratulations! You found all the matches!';
+        }
         console.log(checkForMatch);
     }
 
     /** -- FLIP CARD -- */
 
     function flipCard() {
-        let cardId = this.getAttribute('data-id')
-        cardsChosen.push(cardArray[cardId].name)
-        cardsChosenId.push(cardId)
-        this.setAttribute('src', cardArray[cardId].img)
+        let cardId = this.getAttribute('data-id');
+        cardsChosen.push(cardArray[cardId].name);
+        cardsChosenId.push(cardId);
+        this.setAttribute('src', cardArray[cardId].img);
         if (cardsChosen.length === 2) {
-            setTimeout(checkForMatch, 500)
-        };
+            setTimeout(checkForMatch, 500);
+        }
         console.log(flipCard);
     }
 
@@ -174,6 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     console.log(hideRules);
 
-    createBoard()
+    createBoard();
 
-})
+});
