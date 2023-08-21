@@ -182,7 +182,7 @@ Pairs of the World fills these needs by:
 ## Visual Design
 ### Wireframes
 Wireframes: 
-XX
+![Desktop Wireframe](/assets/imagesrm/wireframedesktop.jpg)
 
 ### Fonts
 <div align="center">
@@ -197,7 +197,7 @@ XX
 </div>
 
 ### Styling
-
+XXX
 ----
 
 # Features
@@ -254,6 +254,7 @@ Two individual alert messages appear to tell the player if they have a correct m
 A custom 404 page has been created and assigned via GitHub to load whenever a non-existent page is requested.
 
 [404 page image](/assets/imagesrm/404.jpg)
+----
 
 # Technologies Used
 ## Languages
@@ -290,9 +291,13 @@ I chose not to use bootstrap and instead wrote all code by hand.
 ## Methods
 ### Validation
 - HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/). I encounted on error of ‘Stray start tag footer’, however this element is being used for the footer element of the page.
+![HTML Validator image](/assets/imagesrm/XX)
 - CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/). I encounted no errors.
+![CSS Validator imahe](/assets/imagesrm/cssvalidator.jpg)
 - Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
+![W3C Link Check image](/assets/imagesrm/XX)
 - Each javascript file was tested on the site for errors and functionality using the console and with [JSHint](https://jshint.com/).
+![javascript Validator image](/assets/imagesrm/XX)
 
 ### General Testing
 - Each time a feature was added, all the functions were tested to see if there was an impact.
@@ -319,8 +324,8 @@ I chose not to use bootstrap and instead wrote all code by hand.
 - When a game is reset the cards do not randomise as they do when a page loads.
 
 ### Fixed Bugs
-- 
-- 
+- XX
+- XX
 
 To my knowledge, I have been able to identify and fix bugs that popped up throughout this project. However, there is room for improvement. Firstly, I would instead of a matches counter add a moves counter and best score counter along side it as originally planned.
 
@@ -328,21 +333,22 @@ To my knowledge, I have been able to identify and fix bugs that popped up throug
 ## Local Deployment
 ### Local Preparation
 **Requirements:**
-- An IDE of your choice, such as [GITPOD] which can be accessed through [GITHUB]( https://github.com/)
+- An IDE of your choice, such as Gitpod, which can be accessed through [GITHUB]( https://github.com/)
 ## Github Deployment
 **Requirements:**
 - A free GitHub account.
 
 ### Github Instructions
 1. Log in to your GitHub account.
-navigate to [( https://github.com/Mair-E/MileStoneProject2]( https://github.com/Mair-E/MileStoneProject2).
+navigate to [https://github.com/Mair-E/MileStoneProject2](https://github.com/Mair-E/MileStoneProject2).
 1. You can set up your own repository and copy or clone it, or you fork the repository.
 2. `git add`, `git commit` and `git push` to a GitHub repository, if necessary.
 3. GitHub pages will update from the master branch by default.
 4. Go to the **Settings** page of the repository.
 5. Scroll down to the **Github Pages** section.
 7. Select the Master Branch as the source and **Confirm** the selection.
-8. Wait a minute or two and it should be live for viewing. See my own [here]( https://mair-e.github.io/MileStoneProject2/
+8. Wait a minute or two and it should be live for viewing. See my own [here]( https://mair-e.github.io/MileStoneProject2/)
+----
 
 ## Credits and Contact
 ### Content
