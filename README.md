@@ -155,3 +155,163 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
     - [Contact](#contact)
 </details>
 
+# UX
+## Goals
+### Visitor Goals
+The target audience for Pair of the World are:
+- People who are interested in travel and geography.
+- People who want to play an educational game.
+- People who fancy having a bit of fun! 
+
+User goals are:
+- Easily work out what the goal of the game is.
+- See the rules of the game.
+- Have it clearly identified if the chosen two cards match or not.
+- Contact the game developer.
+
+Pairs of the World fills these needs by:
+- You can find the game goal (Match the country flag to the country landmark) on the main page and the pop up instructions window.
+- The ‘How To Play’ button is clearly displayed and opens a pop up window in front of the game.
+- When two cards match or do not match, a clear message pops up to tell the user.
+- Providing social media links to the game developer, myself.
+
+### User Stories
+1. As a user interested in educational games, I expect to play a memory card match game that teaches me famous landmarks in different countries.
+
+## Visual Design
+### Wireframes
+Wireframes: 
+XX
+
+### Fonts
+<div align="center">
+  <img src="xx" alt="Fonts">
+</div>
+- The primary font,
+- The secondary font, 
+
+### Colors
+<div align="center">
+  <img src="xx" alt="Color Pallette">
+</div>
+
+### Styling
+
+----
+
+# Features
+## Page Elements
+### Game Page
+#### Game Logo
+#### Game Section
+#### Footer
+#### How to Play Popup 
+
+# Technologies Used
+## Languages
+- [HTML](w3.org/standards/webdesign/htmlcss)
+    * Page markup.
+- [CSS](w3.org/standards/webdesign/htmlcss)
+    * Styling.
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    * Running functions for interactive components, etc.
+
+## Frameworks
+I chose not to use bootstrap and instead wrote all code by hand.
+
+## Libraries
+- [JQuery](https://jquery.com/)
+    * Animations and click functions.
+- [Google Fonts](https://fonts.google.com)
+    * Font Styles.
+
+## Platforms
+- [Github](https://github.com/)
+    * Storing code remotely and deployment.
+- [Gitpod](https://gitpod.io/)
+    * IDE for project development.
+
+## Other Tools
+- [Balsamiq](https://balsamiq.com/)
+    * To create wireframes.
+- [Favicon Generator](https://www.favicon-generator.org/)
+    * Favicons
+----
+
+# Testing
+## Methods
+### Validation
+- HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/). I encounted on error of ‘Stray start tag footer’, however this element is being used for the footer element of the page.
+- CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/). I encounted no errors.
+- Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
+- Each javascript file was tested on the site for errors and functionality using the console and with [JSHint](https://jshint.com/).
+
+### General Testing
+- Each time a feature was added, all the functions were tested to see if there was an impact.
+- The site was sent to friends for feedback and testing.
+- All parts of the game and pop up have been validated. 
+- .gitignore file has been included to prevent system file commits.
+- Pop out windows open and close correctly in existed tab.
+- Links direct you to the appropriate sites.
+
+### Mobile Testing
+- I tested the site personally on my Apple device, going through the entire process, checking buttons, functions, checking out, etc. I was personally unable to test on Android.
+- The site was sent to friends and relatives for them to follow the same process. They have tested on their devices, including Apple and Android,. See known bugs for issues highlighted.
+- Chrome was utilised to inspect the site in mobile format, going through the pages and functions.
+
+### Desktop Testing
+- The site was developed on a Chromebook and, as such, the majority of testing occurred on Chrome.
+- The site was marginally tested on other browsers, such as Edge.
+- Internet Explorer was not tested and the site was not developed with it in mind as support for the browser is gradually being dropped.
+
+## Bugs
+### Known Bugs
+- When a game is reset the matches counter no longer works
+- A user is able to click on the same set of cards twice to count it as multiple matches.
+- When a game is reset the cards do not randomise as they do when a page loads.
+
+### Fixed Bugs
+- 
+- 
+
+To my knowledge, I have been able to identify and fix bugs that popped up throughout this project. However, there is room for improvement. Firstly, I would instead of a matches counter add a moves counter and best score counter along side it as originally planned.
+
+# Deployment
+## Local Deployment
+### Local Preparation
+**Requirements:**
+- An IDE of your choice, such as [GITPOD] which can be accessed through [GITHUB]( https://github.com/)
+## Github Deployment
+**Requirements:**
+- A free GitHub account.
+
+### Github Instructions
+1. Log in to your GitHub account.
+navigate to [( https://github.com/Mair-E/MileStoneProject2]( https://github.com/Mair-E/MileStoneProject2).
+1. You can set up your own repository and copy or clone it, or you fork the repository.
+2. `git add`, `git commit` and `git push` to a GitHub repository, if necessary.
+3. GitHub pages will update from the master branch by default.
+4. Go to the **Settings** page of the repository.
+5. Scroll down to the **Github Pages** section.
+7. Select the Master Branch as the source and **Confirm** the selection.
+8. Wait a minute or two and it should be live for viewing. See my own [here]( https://mair-e.github.io/MileStoneProject2/
+
+## Credits and Contact
+### Content
+All code was hand written using guidance from various resources listed below. 
+https://www.youtube.com/watch?v=tjyDOHzKN0w – Help with writing function for checking matching cards in javascript 
+Tutor support to assist with checkMatch function error of pulling in the logo image to the card array and directing me to add a class to distinguish the paying cards only.
+https://slack.com/intl/en-gb/ - Searching for ideas for inspiration.
+All images were taken from the sites below.
+www.alamy.com – Globe images
+https://www.istockphoto.com/ - Card images and background image.
+[Favicon](https://favicon.io/) – Favicon for the website.
+
+
+### Contact
+Please feel free to contact me at `mair.edmunds@gmail.com`
+
+
+
+
+
