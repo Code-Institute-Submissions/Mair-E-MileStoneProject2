@@ -36,13 +36,14 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 
 ------
 <div align="center">
-  <img src="xxx" style="background-color: black" alt="Globe of the world cartoon">
-</div> (Header)
+  <img src="/assets/imagesrm/logoscreenshot.jpg" style="background-color: black" alt="Globe of the world cartoon">
+</div> 
 <div align="center">
-  <img src="xxx" alt="Memory Game Page">
-</div> (Image of site on all platforms)
+  <img src="/assets/imagesrm/gamepagedesktop.jpg" alt="Memory Game Page on desktop">
+  <img src="/assets/imagesrm/gamepage.jpg" alt="Full memory Game Page">
+</div> 
 
-[Pairs of the World](link xx) is designed as an online interactive game with matching pairs as its main feature. Its goal is to stimulate and entertain the user as well as educate the user on where geographical landmarks can be found around the world. I wanted to create a game that was more intriguing, with a level of difficulty rather than just matching identical pairs. 
+[Pairs of the World](https://mair-e.github.io/MileStoneProject2/) is designed as an online interactive game with matching pairs as its main feature. Its goal is to stimulate and entertain the user as well as educate the user on where geographical landmarks can be found around the world. I wanted to create a game that was more intriguing, with a level of difficulty rather than just matching identical pairs. 
 
 ## Table of Contents
 1. <details open>
@@ -346,15 +347,16 @@ navigate to [( https://github.com/Mair-E/MileStoneProject2]( https://github.com/
 ## Credits and Contact
 ### Content
 All game page code was hand written using guidance from various resources listed below. 
-https://www.youtube.com/watch?v=tjyDOHzKN0w – Help with writing function for checking matching cards in javascript 
-Tutor support to assist with checkMatch function error of pulling in the logo image to the card array and directing me to add a class to distinguish the paying cards only.
-https://slack.com/intl/en-gb/ - Searching for ideas for inspiration.
-All images were taken from the sites below.
-www.alamy.com – Globe images
-https://www.istockphoto.com/ - Card images and background image.
-[Favicon](https://favicon.io/) – Favicon for the website.
+- [Youtube tutorial](https://www.youtube.com/watch?v=tjyDOHzKN0w) Help with writing function for checking matching cards in javascript 
+- Tutor support to assist with checkMatch function error of pulling in the logo image to the card array and directing me to add a class to distinguish the paying cards only.
+- [Slack](https://slack.com/intl/en-gb/) to searching for ideas for inspiration.
 
-404 page code was based on a template found at https://www.sanwebcorner.com/2017/05/how-to-create-simple-404-error-page-and.html 
+All images were taken from the sites below.
+- [alamy.com](www.alamy.com) for Globe image.
+- [istockphoto.com](https://www.istockphoto.com/) for card images and background image.
+- [Favicon](https://favicon.io/) for the Favicon for the website.
+
+- 404 page code was based on a template found at [Sanwebcorner.com](https://www.sanwebcorner.com/2017/05/how-to-create-simple-404-error-page-and.html) 
 
 
 ### Contact
