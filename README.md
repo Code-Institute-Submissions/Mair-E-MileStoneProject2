@@ -181,8 +181,16 @@ Pairs of the World fills these needs by:
 
 ## Visual Design
 ### Wireframes
-Wireframes: 
+I created wireframes to assist me when building my HTML page layout.
+ 
 ![Desktop Wireframe](/assets/imagesrm/wireframedesktop.jpg)
+![Tablet Wireframe](/assets/imagesrm/XX)
+![Mobile Phone Wireframe](/assets/imagesrm/XX)
+
+As the process of creating the website went on I adapted the pages to utilise html, css and javascript that I was more comfortable using as well as made the page look more user friendly. I created updated wireframes to show this.
+
+![Updated  Wireframe](/assets/imagesrm/updatedwireframe.jpg)
+
 
 ### Fonts
 <div align="center">
