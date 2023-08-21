@@ -202,10 +202,57 @@ XX
 # Features
 ## Page Elements
 ### Game Page
+The game page is where all the elements come together for the game to be played out.
+
+- The page loads with the start of the game where is displays the back of the randomised cards so user is unaware where the pairs are.
+- User will click the How To Play button where the goal of the game and instructions will popup.
+- User will then close this popup banner.
+- The user then clicks on two cards and an alert will tell them if a match or to try again. 
+- As the user matches cards of country flags to their landmarks the match counter will increase and when all cards are matched (8 pairs) a congratulations alert will appear and the game complete. 
+- To reset the board and play again the user will click the New Game button.
+
+![Game page image](/assets/imagesrm/gamepage.jpg)
+
 #### Game Logo
+The game logo consists of a cartoon globe of the earth with open arms to welcome users to the page. It is followed by the page and game title.
+
+[Game logo image](/assets/imagesrm/logoscreenshot.jpg)
+
+[Game title image](/assets/imagesrm/titlescreenshot.jpg)
+
 #### Game Section
+The game section is split up into the cards grid and underneath a New Game and How To Play buttons.
+The cards and buttons are fully responsive, javascript backed, allowing the user to click to flip and match cards aswell as start restart game.
+
+The cards grid has four columns and rows, no matter the device size, so all cards are nicely displayed.
+
+[Card Grid image](/assets/imagesrm/cardgridscreenshot.jpg)
+
+[Buttons image](/assets/imagesrm/buttonsscreenshot.jpg)
+
 #### Footer
+The footer is present at the bottom of the page and provides links to my social media profile and the github repository of the game. When on a desktop device using a pointer, the links are animated with CSS to draw attention on hover.
+
+[Footer image](/assets/imagesrm/footer.jpg)
+
 #### How to Play Popup 
+The How to Play full width banner appears when the How To Play button is clicked and gives the player the goal of the game, to match the country flag to its landark, and the istructions of how to play the game.
+The pop up is fixed so is visible at whichever point of the page you are scrolled to.
+
+[How to Play Popup image](/assets/imagesrm/popupscreenshot.jpg)
+
+### Match/No match message
+
+Two individual alert messages appear to tell the player if they have a correct match or to try again, as well as when all cards are matched a Congratulations alert appears. The player can then use the New Game button to start again and reset their score.
+
+[Cards match image](/assets/imagesrm/match.jpg)
+
+[Try again image](/assets/imagesrm/tryagain.jpg)
+
+### 404 Page
+A custom 404 page has been created and assigned via GitHub to load whenever a non-existent page is requested.
+
+[404 page image](/assets/imagesrm/404.jpg)
 
 # Technologies Used
 ## Languages
@@ -298,7 +345,7 @@ navigate to [( https://github.com/Mair-E/MileStoneProject2]( https://github.com/
 
 ## Credits and Contact
 ### Content
-All code was hand written using guidance from various resources listed below. 
+All game page code was hand written using guidance from various resources listed below. 
 https://www.youtube.com/watch?v=tjyDOHzKN0w – Help with writing function for checking matching cards in javascript 
 Tutor support to assist with checkMatch function error of pulling in the logo image to the card array and directing me to add a class to distinguish the paying cards only.
 https://slack.com/intl/en-gb/ - Searching for ideas for inspiration.
@@ -306,6 +353,8 @@ All images were taken from the sites below.
 www.alamy.com – Globe images
 https://www.istockphoto.com/ - Card images and background image.
 [Favicon](https://favicon.io/) – Favicon for the website.
+
+404 page code was based on a template found at https://www.sanwebcorner.com/2017/05/how-to-create-simple-404-error-page-and.html 
 
 
 ### Contact
