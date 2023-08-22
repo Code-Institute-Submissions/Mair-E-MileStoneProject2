@@ -81,6 +81,7 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
     - [General Testing](#general-testing)
     - [Mobile Testing](#mobile-testing)
     - [Desktop Testing](#desktop-testing)
+    - [User Stories Testing](#user-stories-testing)
     </details></li>
 
     <li><details>
@@ -140,10 +141,11 @@ Pairs of the World fills these needs by:
 - Providing social media links to the game developer, myself.
 
 ### User Stories
-1. As a user interested in educational games, I expect to play a memory card match game that teaches me famous landmarks in different countries.
-XXX
-XXX
-XXX
+1. I want to get to understand the main purpose of the site.
+2. As a user interested in educational games, I expect to play a memory card match game that teaches me famous landmarks in different countries.
+3. I want to know how many card pair matches I have made.
+4. I want to know if I've won or lost the game.
+5. I would like to see if the developer has made any other games through social media.
 
 ## Visual Design
 ### Wireframes
@@ -313,6 +315,16 @@ I chose not to use bootstrap and instead wrote all code by hand.
 - The site was developed on a Chromebook and, as such, the majority of testing occurred on Chrome.
 - The site was marginally tested on other browsers, such as Edge.
 - Internet Explorer was not tested and the site was not developed with it in mind as support for the browser is gradually being dropped.
+
+### User Stories Testing
+
+|User Story|Screenshot|
+|---|---|
+|I want to get to understand the main purpose of the site.|![How To Pop Up](assets/imagesrm/popupscreenshot.jpg)|
+|As a user interested in educational games, I expect to play a memory card match game that teaches me famous landmarks in different countries.|![Grid of flag and landmark cards](assets/imagesrm/example.jpg|
+|I want to know if I've won or lost the game.|![Card match pop up](assets/imagesrm/match.jpg)![Try again pop up](assets/imagesrm/tryagain.jpg)|
+|I want to know how many card pair matches I have made.|![Match Score](assets/imagesrm/score.jpg)|
+|I would like to see if the developer has made any other games through social media.|![Link to social media](assets/imagesrm/footer.jpg)|
 
 ## Bugs
 ### Known Bugs
