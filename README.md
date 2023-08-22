@@ -52,12 +52,6 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
     </details></li>
 
     <li><details>
-    <summary><a href="#additional-features">Additional Features</a></summary>
-
-    - xx
-    </details></li>
-
-    <li><details>
     <summary><a href="#feature-ideas">Feature Ideas</a></summary>
 
     - [Basic](#basic)
@@ -147,6 +141,9 @@ Pairs of the World fills these needs by:
 
 ### User Stories
 1. As a user interested in educational games, I expect to play a memory card match game that teaches me famous landmarks in different countries.
+XXX
+XXX
+XXX
 
 ## Visual Design
 ### Wireframes
@@ -241,6 +238,18 @@ Two individual alert messages appear to tell the player if they have a correct m
 A custom 404 page has been created and assigned via GitHub to load whenever a non-existent page is requested.
 
 [404 page image](/assets/imagesrm/404.jpg)
+
+## Feature Ideas
+### Basic
+To improve my game page further I could:
+- Different difficulty levels
+- A best score 
+- Links to county/landmark information
+
+### Content
+- User could select Easy, Difficult level. I would use javascript connected to html buttons to add these functions.
+- User can challenge themselves to beat their score when playing again. I would use more complex javascript to add this function.
+- User clicks a link on a card when matched and a information card pops up. I would add additional html pages or pop up banners using javascript.
 
 ----
 
