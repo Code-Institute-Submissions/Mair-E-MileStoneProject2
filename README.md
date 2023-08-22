@@ -82,6 +82,7 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
     - [Mobile Testing](#mobile-testing)
     - [Desktop Testing](#desktop-testing)
     - [User Stories Testing](#user-stories-testing)
+    - [Lighthouse Testing](#lighthouse-testing)
     </details></li>
 
     <li><details>
@@ -294,7 +295,8 @@ I chose not to use bootstrap and instead wrote all code by hand.
 - CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/). I encounted no errors.
 ![CSS Validator imahe](/assets/imagesrm/cssvalidator.jpg)
 - Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
-![W3C Link Check image](/assets/imagesrm/XX)
+![W3C Link Check image](/assets/imagesrm/linkscheck.jpg)
+Manual link checks required also complete.
 - Each javascript file was tested on the site for errors and functionality using the console and with [JSHint](https://jshint.com/).
 ![javascript Validator image](/assets/imagesrm/XX)
 
@@ -305,6 +307,20 @@ I chose not to use bootstrap and instead wrote all code by hand.
 - .gitignore file has been included to prevent system file commits.
 - Pop out windows open and close correctly in existed tab.
 - Links direct you to the appropriate sites.
+
+Here is a table of the manual testing done on the site to determine if all features work as described and designed:
+
+|Feature Tested|Required Action|Expected Outcome|Result|
+|---|---|---|---|
+|Social media link|Click Mair Edmunds link in the footer|Links should direct to social media channel in a new window|Social media channel loads successfully|
+|New Game button|Click the button labelled 'New Game'|This should reset the page|Game resets|
+|Links highlight on mouse over|Place the cursor over one the two links in the footer|Mair Edmunds and Github enlarger when the pointer moves over them|Font colour changes colour on placing the cursor on them|
+|Player's matched card count changes|Player to make a correct match|Match counter will increase with a correct match|If Player matches two correct cards, matches counter increases by 1. If no match, score remain the same|
+|How To Popup|Select and click on the How To Play button|Upon selecting a popup banner will appear with instructions|Popup banner appears with game instructions|
+|Game successfully completes|Play the game to completion by matching all card pairs|The Player must match all 8 pairs of cards for a end of game message to appear|When all pairs are matches a Congratulations alert appears|
+|Match and Try again alert|Make a correct or incorrect card pair match |If a correct match a successful alert will appear, if incorrect a try again alert will appear|Alert messages display accordingly in both instances|
+|Custom 404 error page (404 page)|Remove a letter from one of the pages to point towards an item that does not exist|As the item does not exist the custom 404 Error page should load with a button to take you back to the game|Page loads correctly and redirection button works|
+
 
 ### Mobile Testing
 - I tested the site personally on my Apple device, going through the entire process, checking buttons, functions, checking out, etc. I was personally unable to test on Android.
@@ -321,10 +337,14 @@ I chose not to use bootstrap and instead wrote all code by hand.
 |User Story|Screenshot|
 |---|---|
 |I want to get to understand the main purpose of the site.|![How To Pop Up](assets/imagesrm/popupscreenshot.jpg)|
-|As a user interested in educational games, I expect to play a memory card match game that teaches me famous landmarks in different countries.|![Grid of flag and landmark cards](assets/imagesrm/example.jpg|
+|As a user interested in educational games, I expect to play a memory card match game that teaches me famous landmarks in different countries.|![Grid of flag and landmark cards](assets/imagesrm/example.jpg)|
 |I want to know if I've won or lost the game.|![Card match pop up](assets/imagesrm/match.jpg)![Try again pop up](assets/imagesrm/tryagain.jpg)|
 |I want to know how many card pair matches I have made.|![Match Score](assets/imagesrm/score.jpg)|
 |I would like to see if the developer has made any other games through social media.|![Link to social media](assets/imagesrm/footer.jpg)|
+
+### Lighthouse Testing
+|![Mobile Lighthouse Testing](assets/imagesrm/accessibility.jpg)|
+|![Desktop Lighthouse Testing](assets/imagesrm/accessibilitydesktop.jpg)|
 
 ## Bugs
 ### Known Bugs
