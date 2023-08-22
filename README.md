@@ -7,11 +7,10 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
 
 ------
 <div align="center">
-  <img src="/assets/imagesrm/logoscreenshot.jpg" style="background-color: black" alt="Globe of the world cartoon">
+  <img src="assets/imagesrm/titlescreenshot.jpg" height="100" style="background-color: black" alt="Pairs of the World title">
 </div> 
 <div align="center">
-  <img src="/assets/imagesrm/gamepagedesktop.jpg" alt="Memory Game Page on desktop">
-  <img src="/assets/imagesrm/gamepage.jpg" alt="Full memory Game Page">
+  <img src="assets/imagesrm/gamepages.jpg" alt="Memory Game Page on phone and desktop">
 </div> 
 
 [Pairs of the World](https://mair-e.github.io/MileStoneProject2/) is designed as an online interactive game with matching pairs as its main feature. Its goal is to stimulate and entertain the user as well as educate the user on where geographical landmarks can be found around the world. I wanted to create a game that was more intriguing, with a level of difficulty rather than just matching identical pairs. 
