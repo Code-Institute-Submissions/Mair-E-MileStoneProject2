@@ -36,7 +36,6 @@ To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the ter
     - [Icons](#icons)
     - [Colors](#colors)
     - [Images](#images)
-    - [Styling](#styling)
     </details></li>
     </ul>
 </details>
@@ -153,9 +152,7 @@ Pairs of the World fills these needs by:
 ### Wireframes
 I created wireframes to assist me when building my HTML page layout.
  
-![Desktop Wireframe](/assets/imagesrm/wireframedesktop.jpg)
-![Tablet Wireframe](/assets/imagesrm/XX)
-![Mobile Phone Wireframe](/assets/imagesrm/XX)
+![Wireframe](/assets/imagesrm/wireframe.jpg)
 
 As the process of creating the website went on I adapted the pages to utilise html, css and javascript that I was more comfortable using as well as made the page look more user friendly. I created updated wireframes to show this.
 
@@ -164,18 +161,30 @@ As the process of creating the website went on I adapted the pages to utilise ht
 
 ### Fonts
 <div align="center">
-  <img src="xx" alt="Fonts">
+  <img src="assets/imagesrm/fonts.jpg" width="400" alt="Fonts">
 </div>
-- The primary font,
-- The secondary font, 
+
+- The primary font, Raleway, was chosen as it is standard and clearly read. Its not too rigid so friendly to the user and can be easily distinguished on different colour backgrounds.
+- The secondary font, Righteous, was chosen as it is more thicker and more playfuil than the primary font so can be used for text that is shorter and impactful.
+
+### Icons
+<div align="center">
+  <img src="assets/imagesrm/linkedin.jpg" alt="Icons">
+</div>
+
+- Icons are taken from the [Fontawesome](https://fontawesome.com/) Icon library and are utilised as classes in the `<i>` tag.
+- As they are utilised as classes, they can easily be styled using other classes or IDs in the same tag. I often used Bootstrap classes to style them uniformly.
+- I have used the linked in icon in the footer for my social account.
 
 ### Colors
 <div align="center">
-  <img src="xx" alt="Color Pallette">
+  <img src="assets/imagesrm/colours.jpg" alt="Examples of colours used" height="200">
 </div>
 
-### Styling
-XXX
+- I wanted the site to maintain a friendly, playful colour scheme that related to the game so followed the colours of a globe of the earth. 
+- I then used darker colours to ensure text was clear and ensures accessibility, for example in the title and background of the buttons. 
+- By having faded backgrounds rather than block colours I also enabled the user to have a view of the game to match up with the instructions as they are reading them.
+
 ----
 
 # Features
@@ -232,6 +241,7 @@ Two individual alert messages appear to tell the player if they have a correct m
 A custom 404 page has been created and assigned via GitHub to load whenever a non-existent page is requested.
 
 [404 page image](/assets/imagesrm/404.jpg)
+
 ----
 
 # Technologies Used
