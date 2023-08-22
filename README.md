@@ -290,15 +290,14 @@ I chose not to use bootstrap and instead wrote all code by hand.
 # Testing
 ## Methods
 ### Validation
-- HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/). I encounted on error of ‘Stray start tag footer’, however this element is being used for the footer element of the page.
-![HTML Validator image](/assets/imagesrm/XX)
+- HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/). I encounted on error of ‘Stray start tag footer’, however this element is being used for the footer element of the page so I have left it in the html code.
+![HTML Validator image](/assets/imagesrm/htmlvalidator.jpg)
 - CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/). I encounted no errors.
 ![CSS Validator imahe](/assets/imagesrm/cssvalidator.jpg)
 - Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
 ![W3C Link Check image](/assets/imagesrm/linkscheck.jpg)
 Manual link checks required also complete.
 - Each javascript file was tested on the site for errors and functionality using the console and with [JSHint](https://jshint.com/).
-![javascript Validator image](/assets/imagesrm/XX)
 
 ### General Testing
 - Each time a feature was added, all the functions were tested to see if there was an impact.
