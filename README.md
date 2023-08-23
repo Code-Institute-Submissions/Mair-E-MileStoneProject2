@@ -347,13 +347,14 @@ Here is a table of the manual testing done on the site to determine if all featu
 
 ## Bugs
 ### Known Bugs
-- When a game is reset the matches counter no longer works
-- A user is able to click on the same set of cards twice to count it as multiple matches.
-- When a game is reset the cards do not randomise as they do when a page loads.
+1. When a game is reset the matches counter no longer works
+2. A user is able to click on the same set of cards twice to count it as multiple matches.
+3. When a game is reset the cards do not randomise as they do when a page loads.
 
 ### Fixed Bugs
 - XX
-- XX
+2. I added to the flipCard function to ignore when a card is clicked twice.
+3. I added the randomise card instruction in javascripy to the new game function to fix this.
 
 To my knowledge, I have been able to identify and fix bugs that popped up throughout this project. However, there is room for improvement. Firstly, I would instead of a matches counter add a moves counter and best score counter along side it as originally planned.
 

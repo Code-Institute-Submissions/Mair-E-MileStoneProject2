@@ -122,15 +122,34 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(checkForMatch);
     }
 
-    /** -- FLIP CARD -- */
+    /** -- FLIP CARD (AND STOP SAME CARD BEING CLICKED TWICE)-- */
+
+    let isFlipping = false;
 
     function flipCard() {
+        if (isFlipping) {
+            return; // Ignore clicks while a card is being flipped
+        }
+
         let cardId = this.getAttribute('data-id');
+
+        // Check if the clicked card has already been chosen
+        if (cardsChosenId.includes(cardId)) {
+            return; // Ignore clicks on already chosen cards
+        }
+        // Mark that a card is being flipped
+        isFlipping = true;
+
         cardsChosen.push(cardArray[cardId].name);
         cardsChosenId.push(cardId);
         this.setAttribute('src', cardArray[cardId].img);
         if (cardsChosen.length === 2) {
-            setTimeout(checkForMatch, 500);
+            setTimeout(() => {
+                checkForMatch();
+                isFlipping = false; // Allow flipping again after checking for match
+            }, 500);
+        } else {
+            isFlipping = false; // Allow flipping again if only one card is chosen
         }
         console.log(flipCard);
     }
