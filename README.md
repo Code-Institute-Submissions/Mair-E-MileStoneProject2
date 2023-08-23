@@ -292,6 +292,7 @@ I chose not to use bootstrap and instead wrote all code by hand.
 ### Validation
 - HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/). I encounted on error of ‘Stray start tag footer’, I then move dthe footer inside the body of the html to correct this.
 ![HTML Validator image](/assets/imagesrm/htmlvalidator.jpg)
+![updated HTML Validator image](/assets/imagesrm/htmlvalidator2.jpg)
 - CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/). I encounted no errors.
 ![CSS Validator imahe](/assets/imagesrm/cssvalidator.jpg)
 - Links checked with [W3C Link Checker](https://validator.w3.org/checklink).
@@ -352,7 +353,7 @@ Here is a table of the manual testing done on the site to determine if all featu
 3. When a game is reset the cards do not randomise as they do when a page loads.
 
 ### Fixed Bugs
-- XX
+1. I XX
 2. I added to the flipCard function to ignore when a card is clicked twice.
 3. I added the randomise card instruction in javascripy to the new game function to fix this.
 
