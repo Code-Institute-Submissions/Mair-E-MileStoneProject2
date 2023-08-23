@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Sorry, try again.');
         }
 
+
         /** -- ALL CARDS MATCHED AND GAME COMPLETE -- */
 
         cardsChosen = [];
@@ -165,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         moves = 0;
         grid.innerHTML = '';
         createBoard();
+        cardArray.sort(() => 0.5 - Math.random());
         console.log("Button clicked!");
     });
 
