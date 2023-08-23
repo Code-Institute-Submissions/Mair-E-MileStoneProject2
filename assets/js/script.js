@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let cardsChosen = [];
     let cardsChosenId = [];
     let cardsWon = [];
-    let moveCount = 0;
+    let matchCount = 0;
 
     /** -- RANDOMISE CARD ARRAY -- */
 
@@ -101,14 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionOneId = cardsChosenId[0];
         const optionTwoId = cardsChosenId[1];
 
-        //Increment the move count
-        moveCount++;
+        //Increment the match count
+        matchCount++;
 
         if ((cardsChosen[0]) === cardsChosen[1]) {
             alert('You found a match.');
-
-            // Update the move count display
-            updateMoveCountDisplay();
 
             cards[optionOneId].setAttribute('src', 'assets/images/tick.jpg');
             cards[optionTwoId].setAttribute('src', 'assets/images/tick.jpg');
@@ -117,103 +114,99 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionOneId].setAttribute('src', 'assets/images/world.jpg');
             cards[optionTwoId].setAttribute('src', 'assets/images/world.jpg');
         }
+
+
+        /** -- ALL CARDS MATCHED AND GAME COMPLETE -- */
+
+        cardsChosen = [];
+        cardsChosenId = [];
+        resultDisplay.textContent = cardsWon.length;
+
+        if (cardsWon.length === cardArray.length / 2) {
+            resultDisplay.textContent = 'Congratulations! You found all the matches!';
+        }
+        console.log(checkForMatch);
     }
 
-    function updateMoveCountDisplay() {
-        const moveCountElement = document.getElementById('move-count');
-        moveCountElement.textContent = `Moves: ${moveCount}`;
+    /** -- FLIP CARD (AND STOP SAME CARD BEING CLICKED TWICE)-- */
+
+    let isFlipping = false;
+
+    function flipCard() {
+        if (isFlipping) {
+            return; // Ignore clicks while a card is being flipped
+        }
+
+        let cardId = this.getAttribute('data-id');
+
+        // Check if the clicked card has already been chosen
+        if (cardsChosenId.includes(cardId)) {
+            return; // Ignore clicks on already chosen cards
+        }
+        // Mark that a card is being flipped
+        isFlipping = true;
+
+        cardsChosen.push(cardArray[cardId].name);
+        cardsChosenId.push(cardId);
+        this.setAttribute('src', cardArray[cardId].img);
+        if (cardsChosen.length === 2) {
+            setTimeout(() => {
+                checkForMatch();
+                isFlipping = false; // Allow flipping again after checking for match
+            }, 750);
+        } else {
+            isFlipping = false; // Allow flipping again if only one card is chosen
+        }
+        console.log(flipCard);
+
     }
 
+    /** -- RESET MATCHES COUNTER AND CLEAR THE BOARD -- */
 
-    /** -- ALL CARDS MATCHED AND GAME COMPLETE -- */
+    const resetButton = document.querySelector(".reset");
+    const matchContainer = document.querySelector('.move-count');
 
-    cardsChosen = [];
-    cardsChosenId = [];
-    resultDisplay.textContent = cardsWon.length;
+    resetButton.addEventListener("click", () => {
+        matchCount = 0;
+        matchContainer.textContent = matchCount;
 
-    if (cardsWon.length === cardArray.length / 2) {
-        resultDisplay.textContent = 'Congratulations! You found all the matches!';
+        // Reset matches count and update the display
+        cardsWon = [];
+        resultDisplay.textContent = cardsWon.length;
+
+
+        grid.innerHTML = '';
+        createBoard();
+        console.log("Button clicked!");
+        cardArray.sort(() => 0.5 - Math.random());
+    });
+
+    /** -- OPEN HOW TO PLAY, pop-up instructions -- */
+
+    const rulesButton = document.getElementById("rules");
+    let rules = document.getElementsByClassName("rules-card");
+
+    console.log(rulesButton);
+
+    rulesButton.addEventListener('click', showRules);
+
+    function showRules() {
+        rules[0].style.display = "block";
     }
-    console.log(checkForMatch);
-}
+    console.log(showRules);
 
-/** -- FLIP CARD (AND STOP SAME CARD BEING CLICKED TWICE)-- */
+    /** -- CLOSE HOW TO PLAY, pop-up instructions -- */
 
-let isFlipping = false;
+    const playButton = document.querySelector(".play-button");
+    rules = document.getElementsByClassName("rules-card");
 
-function flipCard() {
-    if (isFlipping) {
-        return; // Ignore clicks while a card is being flipped
+    playButton.addEventListener('click', hideRules);
+
+    function hideRules() {
+        rules[0].style.display = "none";
     }
+    console.log(hideRules);
 
-    let cardId = this.getAttribute('data-id');
-
-    // Check if the clicked card has already been chosen
-    if (cardsChosenId.includes(cardId)) {
-        return; // Ignore clicks on already chosen cards
-    }
-    // Mark that a card is being flipped
-    isFlipping = true;
-
-    cardsChosen.push(cardArray[cardId].name);
-    cardsChosenId.push(cardId);
-    this.setAttribute('src', cardArray[cardId].img);
-    if (cardsChosen.length === 2) {
-        setTimeout(() => {
-            checkForMatch();
-            isFlipping = false; // Allow flipping again after checking for match
-        }, 500);
-    } else {
-        isFlipping = false; // Allow flipping again if only one card is chosen
-    }
-    console.log(flipCard);
-}
-
-/** -- RESET MATCHES COUNTER AND CLEAR THE BOARD -- */
-
-const resetButton = document.querySelector(".reset");
-const moveContainer = document.querySelector('.move-count');
-
-resetButton.addEventListener("click", () => {
-    moveCount = 0;
-    moveContainer.textContent = moveCount;
-
-    // Reset matches count and update the display
-    cardsWon = [];
-    resultDisplay.textContent = cardsWon.length;
-
-
-    grid.innerHTML = '';
     createBoard();
-    console.log("Button clicked!");
-    cardArray.sort(() => 0.5 - Math.random());
-});
-
-/** -- OPEN HOW TO PLAY, pop-up instructions -- */
-
-const rulesButton = document.getElementById("rules");
-let rules = document.getElementsByClassName("rules-card");
-
-console.log(rulesButton);
-
-rulesButton.addEventListener('click', showRules);
-
-function showRules() {
-    rules[0].style.display = "block";
-}
-console.log(showRules);
-
-/** -- CLOSE HOW TO PLAY, pop-up instructions -- */
-
-const playButton = document.querySelector(".play-button"); rules = document.getElementsByClassName("rules-card");
-
-playButton.addEventListener('click', hideRules);
-
-function hideRules() {
-    rules[0].style.display = "none";
-}
-console.log(hideRules);
-
-createBoard();
 
 });
