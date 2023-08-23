@@ -290,7 +290,7 @@ I chose not to use bootstrap and instead wrote all code by hand.
 # Testing
 ## Methods
 ### Validation
-- HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/). I encounted on error of ‘Stray start tag footer’, however this element is being used for the footer element of the page so I have left it in the html code.
+- HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/). I encounted on error of ‘Stray start tag footer’, I then move dthe footer inside the body of the html to correct this.
 ![HTML Validator image](/assets/imagesrm/htmlvalidator.jpg)
 - CSS has been validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and auto-prefixed with [CSS Autoprefixer](https://autoprefixer.github.io/). I encounted no errors.
 ![CSS Validator imahe](/assets/imagesrm/cssvalidator.jpg)
