@@ -162,12 +162,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let moveCount = 0;
 
     resetButton.addEventListener("click", () => {
-        moveContainer.innerHTML = 0;
         moves = 0;
+        moveContainer.textContent = moveCount;
+
+        // Reset matches count and update the display
+        cardsWon = [];
+        resultDisplay.textContent = cardsWon.length;
+
+
         grid.innerHTML = '';
         createBoard();
-        cardArray.sort(() => 0.5 - Math.random());
         console.log("Button clicked!");
+        cardArray.sort(() => 0.5 - Math.random());
     });
 
     /** -- OPEN HOW TO PLAY, pop-up instructions -- */
