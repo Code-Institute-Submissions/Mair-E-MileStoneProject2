@@ -67,7 +67,7 @@ body {
 }
 
 .reset:hover,
-.rules:hover,
+#rules:hover,
 .play-button:hover {
   cursor: pointer;
 }
