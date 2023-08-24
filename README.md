@@ -379,7 +379,7 @@ Here is a table of the manual testing done on the site to determine if all featu
 3. When a game is reset the cards do not randomise as they do when a page loads.
 
 ### Fixed Bugs
-1. I XX
+1. After alot of figuring out and trial and error I corrected the reset button to enable the atch counter to work when a game is reset!.
 2. I added to the flipCard function to ignore when a card is clicked twice.
 3. I added the randomise card instruction in javascripy to the new game function to fix this.
 

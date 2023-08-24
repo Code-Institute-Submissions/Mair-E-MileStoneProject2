@@ -114,6 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 //Increment the match count
                 matchedCardCount++;
 
+                // Update the matched card count display
+                resultDisplay.textContent = `Matches: ${matchedCardCount} / ${cardArray.length / 2}`;
+
             } else {
                 cards[optionOneId].setAttribute('src', 'assets/images/world.jpg');
                 cards[optionTwoId].setAttribute('src', 'assets/images/world.jpg');
@@ -128,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             resultDisplay.textContent = `Matches: ${matchedCardCount} / ${cardArray.length / 2}`;
 
             if (cardsWon.length === cardArray.length / 2) {
+                resultDisplay.textContent = '';
                 resultDisplay.textContent = 'Congratulations! You found all the matches!';
             }
         }
@@ -177,15 +181,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 cardsChosenId = [];
                 cardsWon = [];
 
-                matchContainer.textContent = matchedCardCount;
-
-                cardsWon.push(cardsChosen);
-
-                //Increment the match count
-                matchedCardCount++;
-
                 // Reset matches count and update the display
-                resultDisplay.textContent = 'Matches: $ {matchedCardCount} / ${cardArray.length / 2}';
+                resultDisplay.textContent = `Matches: ${matchedCardCount} / ${cardArray.length / 2}`;
 
                 grid.innerHTML = '';
                 createBoard();
