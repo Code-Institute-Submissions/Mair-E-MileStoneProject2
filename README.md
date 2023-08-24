@@ -288,6 +288,32 @@ I chose not to use bootstrap and instead wrote all code by hand.
 ----
 
 # Testing
+Testing can be conducted either manually or automated and each has its own pros and cons.
+- Manual
+    Pros
+    - Simpler. Less training and program knowledge is required.
+    - User testing. Performed by humans so helps in usability testing.
+    Cons
+    - Time. Can take a lot of time up.
+    - People. Requires people resource as complete by the tester/developer.
+    - Limited. Errors may be missed as human error will come into it.
+
+    Manual testing is used for low volume, exploratory testing where the deveoper wants to test the usability.
+
+- Automated
+    Pros
+    - Quicker. Hundreds of tests can run in a short space of time.
+    - Efficient. Helps detect errors earlier as written before the software.
+    - Specific. Edge cases can be accounted for.
+    - Reliable. Results are accurate and repeatable.
+    Cons
+    - Limited. Only as good as the questions we ask.
+    - Function Only. Doesn't test the User Stories.
+
+    Automated Testing is use for high volume, repeatable testing to test performance.
+
+I have chosen to primarily use manual testing for my web page.
+
 ## Methods
 ### Validation
 - HTML has been validated with [W3C HTML5 Validator](https://validator.w3.org/). I encounted on error of ‘Stray start tag footer’, I then move dthe footer inside the body of the html to correct this.
