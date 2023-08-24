@@ -111,6 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 cards[optionTwoId].setAttribute('src', 'assets/images/tick.jpg');
                 cardsWon.push(cardsChosen);
 
+                cards[optionOneId].classList.add('matched');
+                cards[optionTwoId].classList.add('matched');
+
+                cardsWon.push(cardsChosen);
+
                 //Increment the match count
                 matchedCardCount++;
 
@@ -148,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let cardId = this.getAttribute('data-id');
 
             // Check if the clicked card has already been chosen
-            if (cardsChosenId.includes(cardId)) {
+            if (cardsChosenId.includes(cardId) || this.classList.contains('matched')) {
                 return; // Ignore clicks on already chosen cards
             }
             // Mark that a card is being flipped
@@ -157,6 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cardsChosen.push(cardArray[cardId].name);
             cardsChosenId.push(cardId);
             this.setAttribute('src', cardArray[cardId].img);
+
             if (cardsChosen.length === 2) {
                 setTimeout(() => {
                     checkForMatch();
