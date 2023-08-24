@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /** -- RESET MATCHES COUNTER AND CLEAR THE BOARD -- */
 
         const resetButton = document.querySelector(".reset");
-        const matchContainer = document.querySelector('.move-count');
+        const matchContainer = document.querySelector('.match-count');
 
         resetButton.addEventListener("click", () => {
             try {
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const rulesButton = document.getElementById("rules");
         let rules = document.getElementsByClassName("rules-card");
 
-        console.log(rulesButton);
+        console.log("rulesButton");
 
         rulesButton.addEventListener('click', showRules);
 
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error("An error occurred in playButton click event:", error);
             }
         }
-        console.log(hideRules);
+        console.log("hideRules");
 
         createBoard();
 
