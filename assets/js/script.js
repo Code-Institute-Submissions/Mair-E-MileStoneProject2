@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     let card = document.createElement('img');
                     card.setAttribute('src', 'assets/images/world.jpg');
                     card.setAttribute('class', 'images');
-                    card.setAttribute('alt', 'heart shaped globe')
+                    card.setAttribute('alt', 'heart shaped globe');
                     card.setAttribute('data-id', i);
                     card.addEventListener('click', flipCard);
                     grid.appendChild(card);
