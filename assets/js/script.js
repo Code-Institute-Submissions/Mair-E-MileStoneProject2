@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     card.addEventListener('click', flipCard);
                     grid.appendChild(card);
                 }
-                console.log("Creating board...");
             } catch (error) {
                 console.error("An error occurred in createBoard:", error);
             }
@@ -130,7 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (cardsWon.length === cardArray.length / 2) {
                 resultDisplay.textContent = 'Congratulations! You found all the matches!';
             }
-            console.log(checkForMatch);
         }
 
         /** -- FLIP CARD (AND STOP SAME CARD BEING CLICKED TWICE)-- */
@@ -162,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 isFlipping = false; // Allow flipping again if only one card is chosen
             }
-            console.log(flipCard);
 
         }
 
@@ -183,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 grid.innerHTML = '';
                 createBoard();
-                console.log("Button clicked!");
+
                 cardArray.sort(() => 0.5 - Math.random());
             } catch (error) {
                 console.error("An error occurred in resetButton click event:", error);
@@ -195,14 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const rulesButton = document.getElementById("rules");
         let rules = document.getElementsByClassName("rules-card");
 
-        console.log("rulesButton");
-
         rulesButton.addEventListener('click', showRules);
 
         function showRules() {
             rules[0].style.display = "block";
         }
-        console.log(showRules);
 
         /** -- CLOSE HOW TO PLAY, pop-up instructions -- */
 
@@ -218,7 +212,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error("An error occurred in playButton click event:", error);
             }
         }
-        console.log("hideRules");
 
         createBoard();
 
