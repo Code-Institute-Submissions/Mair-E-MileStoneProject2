@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let cardsChosen = [];
         let cardsChosenId = [];
         let cardsWon = [];
-        let matchCount = 0;
         let matchedCardCount = 0;
 
         /** -- RANDOMISE CARD ARRAY -- */
@@ -102,7 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function checkForMatch() {
             let cards = document.querySelectorAll('.images');
-            console.log(cards);
             const optionOneId = cardsChosenId[0];
             const optionTwoId = cardsChosenId[1];
 
@@ -173,13 +171,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         resetButton.addEventListener("click", () => {
             try {
-                matchCount = 0;
-                matchContainer.textContent = matchCount;
+                //reset variables
+                matchedCardCount = 0;
+                cardsChosen = [];
+                cardsChosenId = [];
+                cardsWon = [];
+
+                matchContainer.textContent = matchedCardCount;
+
+                cardsWon.push(cardsChosen);
+
+                //Increment the match count
+                matchedCardCount++;
 
                 // Reset matches count and update the display
-                cardsWon = [];
-                resultDisplay.textContent = cardsWon.length;
-
+                resultDisplay.textContent = 'Matches: $ {matchedCardCount} / ${cardArray.length / 2}';
 
                 grid.innerHTML = '';
                 createBoard();
